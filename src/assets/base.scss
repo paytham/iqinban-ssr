@@ -1,0 +1,143 @@
+/**
+ * 自适应方案 vm layout
+ * 576, 768, 992, 1200 (参考bootstrap)
+ */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* fix for safari */
+html {
+  width: 100.01%;
+}
+
+body {
+  -webkit-overflow-scrolling: touch;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+$main-width: 1920px;
+$main-width-mobile: 375px;
+@function pxToVw($args) {
+  @return #{$args / $main-width * 100}vw
+}
+@function pxToVwMobile($w) {
+  @return #{$w / $main-width-mobile * 100}vw
+}
+
+.clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+.floatleft {
+  @media screen and (min-width: 1000px) {
+    float: left;
+  }
+}
+.floatright {
+  @media screen and (min-width: 1000px) {
+    float: right;
+  }
+}
+.floatcenter {
+  margin: 0 auto;
+}
+
+// 1px
+@mixin i-1px($color, $type:'all', $radius: 0, $width: 1px) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  @if $type == 'all' {
+    border: $width solid $color;
+  }
+  @else if $type == 't' {
+    border-top: $width solid $color;
+  }
+  @else if $type == 'b' {
+    border-bottom: $width solid $color;
+  }
+  @else if $type == 'l' {
+    border-left: $width solid $color;
+  }
+  @else if $type == 'r' {
+    border-right: $width solid $color;
+  }
+  @else if $type == 'tb' {
+    border-top: $width solid $color;
+    border-bottom: $width solid $color;
+  }
+  @else {
+    border: none;
+  }
+  color: $color;
+  border-radius: $radius;
+  transform-origin: left top;
+  transform: scale(0.5);
+}
+
+// container
+.container {
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+  margin: 0 auto;
+}
+.container-fluid {
+  width: 100%;
+}
+
+// viewbox
+.viewbox {
+  min-height: 300px;
+}
+
+// noborder
+.noborder {
+  border: none !important;
+  &:before, &:after {
+    border: none !important;
+  }
+}
+
+// wow
+.wow {
+  visibility: hidden;
+}
+
+// color
+$color-charcoal: #344f3e;
+$color-gunmetal: #576a67;
+$color-dull-teal: #62a4a0;
+$color-pale-teal: #5fbbb5;
+$color-dark-peach: #e57453;
+
+// font
+@font-face {
+  font-family: 'iconfont';  /* project id 266420 */
+  src: url('//at.alicdn.com/t/font_266420_zwmx4b2qa198uxr.eot');
+  src: url('//at.alicdn.com/t/font_266420_zwmx4b2qa198uxr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_266420_zwmx4b2qa198uxr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_266420_zwmx4b2qa198uxr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_266420_zwmx4b2qa198uxr.svg#iconfont') format('svg');
+}
+@import url("//at.alicdn.com/t/font_266420_zwmx4b2qa198uxr.css");
