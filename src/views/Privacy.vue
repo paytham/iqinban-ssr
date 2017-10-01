@@ -97,6 +97,9 @@
 <script>
   export default {
     name: 'Privacy',
+    title () {
+      return '琴伴 | 隐私条款'
+    },
     computed: {
       imgUrl () {
         return this.$store.state.imgUrl

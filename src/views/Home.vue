@@ -59,6 +59,9 @@
       IRow,
       ICol
     },
+    title () {
+      return '琴伴—你聪明的练琴伙伴'
+    },
     computed: {
       imgUrl () {
         return this.$store.state.imgUrl

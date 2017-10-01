@@ -115,6 +115,9 @@
       IRow,
       ICol
     },
+    title () {
+      return '琴伴 | 教学管理系统'
+    },
     computed: {
       imgUrl () {
         return this.$store.state.imgUrl

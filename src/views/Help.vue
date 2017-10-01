@@ -61,6 +61,9 @@
       IRow,
       ICol
     },
+    title () {
+      return '琴伴 | 帮助与支持'
+    },
     computed: {
       imgUrl () {
         return this.$store.state.imgUrl

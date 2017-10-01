@@ -49,6 +49,9 @@
 
 <script>
   export default {
-    name: 'Corp'
+    name: 'Corp',
+    title () {
+      return '琴伴 | 商务合作'
+    }
   }
 </script>

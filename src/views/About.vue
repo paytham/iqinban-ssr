@@ -60,6 +60,9 @@
       IRow,
       ICol
     },
+    title () {
+      return '琴伴 | 关于我们'
+    },
     methods: {
       showMap () {
         Map().then(BMap => {
