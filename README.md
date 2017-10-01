@@ -1,7 +1,8 @@
-# iQinban website
+# iQinban ssr
 
-iQinban website clone built with Vue 2.0 + vue-router + vuex, with server-side rendering.
-Based on vue-hackernews-2.0
+iQinban ssr clone built with Vue 2.0 + vue-router + vuex, with server-side rendering.<br>
+Based on vue-hackernews-2.0<br>
+Thanks for yyx's great works
 
 ## Features
 - Server Side Rendering
