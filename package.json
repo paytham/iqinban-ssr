@@ -3,6 +3,7 @@
   "description": "iQinban",
   "author": "Paytham <caiyuhao2015@gmail.com>",
   "private": true,
+  "version": "1.0.0",
   "scripts": {
     "dev": "node server",
     "start": "cross-env NODE_ENV=production node server",

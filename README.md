@@ -6,6 +6,10 @@ Thanks for yyx's great works
 
 **A detailed Vue SSR guide can be found [here](https://ssr.vuejs.org).**
 
+##ChangeLog
+- 2017/10/01
+  - create
+
 ## Build Setup
 
 **Requires Node.js 7+**
