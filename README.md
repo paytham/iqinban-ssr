@@ -1,14 +1,22 @@
-# iQinban ssr
+# iQinban-ssr
 
-iQinban ssr clone built with Vue 2.0 + vue-router + vuex, with server-side rendering.<br>
-Based on vue-hackernews-2.0<br>
-Thanks for yyx's great works
+iQinban-ssr clone built with Vue 2.0 + vue-router + vuex, with server-side rendering.<br>
+Based on vue-hackernews-2.0
 
 **A detailed Vue SSR guide can be found [here](https://ssr.vuejs.org).**
 
-##ChangeLog
+## ChangeLog
+- 2017/10/02
+  - Add animation system
 - 2017/10/01
-  - create
+  - Create
+
+## Features
+- Multi-device support
+- Most of browser support
+- Vm Layout
+- Server side render
+- Animation system
 
 ## Build Setup
 
