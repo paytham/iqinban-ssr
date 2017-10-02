@@ -36,12 +36,12 @@ $main-width-mobile: 375px;
 }
 
 .floatleft {
-  @media screen and (min-width: 1000px) {
+  @media (min-width: 1000px) {
     float: left;
   }
 }
 .floatright {
-  @media screen and (min-width: 1000px) {
+  @media (min-width: 1000px) {
     float: right;
   }
 }

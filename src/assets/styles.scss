@@ -18,15 +18,54 @@
  */
 
 /*----- start animate -----*/
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
 @keyframes fadeInUp {
-  0% {
-    transform: translate3d(0, pxToVw(15px), 0);
+  from {
     opacity: 0;
+    transform: translate3d(0, 20px, 0);
   }
-  100% {
-    transform: translate3d(0, 0, 0);
+  to {
     opacity: 1;
+    transform: none;
   }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
 }
 /*----- end animate -----*/
 
@@ -36,7 +75,7 @@ h1 {
   line-height: pxToVw(62px);
   margin-bottom: pxToVw(30px);
   will-change: transform;
-  @media screen and (max-width: 999px) {
+  @media (max-width: 999px) {
     font-size: pxToVwMobile(24px);
     line-height: pxToVwMobile(30px);
     margin-bottom: pxToVwMobile(15px);
@@ -45,10 +84,10 @@ h1 {
 h2 {
   font-size: pxToVw(32px);
   line-height: pxToVw(40px);
-  @media screen and (min-width: 1000px) {
+  @media (min-width: 1000px) {
     margin-bottom: pxToVw(38px);
   }
-  @media screen and (max-width: 999px) {
+  @media (max-width: 999px) {
     font-size: pxToVwMobile(24px);
     line-height: pxToVwMobile(30px);
     margin-bottom: pxToVwMobile(15px);
@@ -57,7 +96,7 @@ h2 {
 h3 {
   font-size: pxToVw(24px);
   line-height: pxToVw(28px);
-  @media screen and (max-width: 999px) {
+  @media (max-width: 999px) {
     font-size: pxToVwMobile(24px);
     line-height: pxToVwMobile(28px);
   }
@@ -66,7 +105,7 @@ p.p1 {
   font-size: pxToVw(22px);
   line-height: pxToVw(32px);
   will-change: transform;
-  @media screen and (max-width: 999px) {
+  @media (max-width: 999px) {
     font-size: pxToVwMobile(16px);
     line-height: pxToVwMobile(21px);
   }
@@ -75,7 +114,7 @@ p.p2, label.p2 {
   display: block;
   font-size: pxToVw(17px);
   line-height: pxToVw(26px);
-  @media screen and (max-width: 999px) {
+  @media (max-width: 999px) {
     font-size: pxToVwMobile(16px);
     line-height: pxToVwMobile(21px);
   }
@@ -95,11 +134,11 @@ a.b, button.b {
   line-height: pxToVw(22px);
   display: inline-block;
   text-align: center;
-  @media screen and (max-width: 999px) {
+  @media (max-width: 999px) {
     font-size: pxToVwMobile(14px);
     line-height: pxToVwMobile(20px);
   }
-  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1279px) and (min-width: 1000px) {
+  @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1279px) and (min-width: 1000px) {
     font-size: pxToVw(24px);
   }
 }
@@ -107,12 +146,12 @@ a.b, button.b {
   text-align: center;
   font-size: pxToVw(12px);
   padding: pxToVw(70px) 0 pxToVw(30px);
-  @media screen and (max-width: 999px) {
+  @media (max-width: 999px) {
     font-size: pxToVwMobile(12px);
     background: #fff;
     padding: pxToVwMobile(18px) 0;
   }
-  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1279px) and (min-width: 999px) {
+  @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1279px) and (min-width: 999px) {
     font-size: pxToVw(18px);
   }
 }
@@ -137,7 +176,7 @@ $header-opaque-background: #fff;
     -webkit-backdrop-filter: blur(5px);
   }
   &.is-opaque {
-    @media screen and (min-width: 1000px) {
+    @media (min-width: 1000px) {
       background-color: $header-opaque-background;
     }
     &.is-active {
@@ -147,12 +186,12 @@ $header-opaque-background: #fff;
   }
   &__inner {
     @extend .clearfix;
-    @media screen and (max-width: 1239px) {
+    @media (max-width: 1239px) {
       max-width: 1000px;
       margin: 0 auto;
       padding: 0 12px;
     }
-    @media screen and (min-width: 1240px) {
+    @media (min-width: 1240px) {
       padding: 0 120px;
     }
   }
@@ -168,7 +207,7 @@ $header-opaque-background: #fff;
         display: block;
         width: 100%;
       }
-      @media screen and (max-width: 575px) {
+      @media (max-width: 575px) {
         height: 25px;
         width: 25px;
       }
@@ -179,23 +218,23 @@ $header-opaque-background: #fff;
       font-size: 24px;
       margin-left: 15px;
       line-height: 40px;
-      @media screen and (max-width: 575px) {
+      @media (max-width: 575px) {
         margin-left: 8px;
         font-size: 14px;
         line-height: 24px;
       }
     }
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       position: absolute;
       left: 0;
       right: 0;
       top: 0;
       margin: 0 auto;
     }
-    @media screen and (max-width: 575px) {
+    @media (max-width: 575px) {
       width: 82px;
     }
-    @media screen and (min-width: 576px) {
+    @media (min-width: 576px) {
       width: 136px;
     }
   }
@@ -205,7 +244,7 @@ $header-opaque-background: #fff;
   }
   nav {
     opacity: 0;
-    @media screen and (min-width: 1000px) {
+    @media (min-width: 1000px) {
       opacity: 1;
     }
     > a {
@@ -213,13 +252,13 @@ $header-opaque-background: #fff;
       position: relative;
       padding: 0 30px;
       font-size: pxToVw(16px);
-      @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1279px) and (min-width: 1000px) {
+      @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1279px) and (min-width: 1000px) {
         font-size: pxToVw(24px);
       }
-      @media screen and (max-width: 575px) {
+      @media (max-width: 575px) {
         font-size: pxToVwMobile(14px);
       }
-      @media screen and (max-width: 999px) and (min-width: 576px) {
+      @media (max-width: 999px) and (min-width: 576px) {
         font-size: pxToVwMobile(8px);
       }
       color: $nav-color;
@@ -227,7 +266,7 @@ $header-opaque-background: #fff;
         color: $nav-active-color;
       }
     }
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       position: fixed;
       left: 0;
       right: 0;
@@ -282,10 +321,10 @@ $header-opaque-background: #fff;
         transform: translate3d(0, -100%, 0);
         transition: all 500ms ease-in;
       }
-      @media screen and (max-width: 575px) {
+      @media (max-width: 575px) {
         top: 50px;
       }
-      @media screen and (min-width: 576px) {
+      @media (min-width: 576px) {
         top: 60px;
       }
     }
@@ -293,7 +332,7 @@ $header-opaque-background: #fff;
   &__home {
     display: none;
     color: $nav-color;
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       display: block;
       padding: 0 pxToVwMobile(15px);
       margin-right: pxToVwMobile(-15px);
@@ -306,7 +345,7 @@ $header-opaque-background: #fff;
   &__nav {
     display: none;
     color: $nav-color;
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       display: block;
       padding: 0 pxToVwMobile(15px);
       margin-left: pxToVwMobile(-15px);
@@ -320,7 +359,7 @@ $header-opaque-background: #fff;
    * 自适应方案 vm layout
    * 576, 768, 992, 1200 (参考bootstrap)
    */
-  @media screen and (max-width: 767px) {
+  @media (max-width: 767px) {
     height: 50px;
     &__inner {
       height: 50px;
@@ -330,7 +369,7 @@ $header-opaque-background: #fff;
       margin-top: 11px;
     }
   }
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     height: 60px;
     &__inner {
       height: 60px;
@@ -340,7 +379,7 @@ $header-opaque-background: #fff;
       margin-top: 10px;
     }
   }
-  @media screen and (min-width: 992px) {
+  @media (min-width: 992px) {
     height: 70px;
     &__inner {
       height: 70px;
@@ -350,7 +389,7 @@ $header-opaque-background: #fff;
       margin-top: 15px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media (min-width: 1200px) {
     height: 80px;
     &__inner {
       height: 80px;
@@ -375,11 +414,11 @@ $footer-border-color: darken($footer-background, 20%);
     display: block;
     font-size: pxToVw(14px);
     line-height: pxToVw(32px);
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       font-size: pxToVwMobile(14px);
       line-height: pxToVwMobile(32px);
     }
-    @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1279px) and (min-width: 999px) {
+    @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1279px) and (min-width: 999px) {
       font-size: pxToVw(21px);
       line-height: pxToVw(48px);
     }
@@ -391,13 +430,13 @@ $footer-border-color: darken($footer-background, 20%);
     position: relative;
     overflow: hidden;
     &:after {
-      @media screen and (max-width: 999px) {
+      @media (max-width: 999px) {
         @include i-1px($footer-border-color, 'b');
         left: pxToVwMobile(32px);
         box-sizing: border-box;
       }
     }
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       padding: pxToVwMobile(10px) pxToVwMobile(28px) pxToVwMobile(13px) pxToVwMobile(32px);
     }
     &.is-active {
@@ -416,7 +455,7 @@ $footer-border-color: darken($footer-background, 20%);
       transform-origin: 50% 50%;
       transform: rotate(-90deg);
       transition: transform 300ms linear;
-      @media screen and (max-width: 999px) {
+      @media (max-width: 999px) {
         float: right;
         display: block;
       }
@@ -424,7 +463,7 @@ $footer-border-color: darken($footer-background, 20%);
   }
   &__item {
     color: $footer-title-item;
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       padding: pxToVwMobile(14px) 0 pxToVwMobile(14px) pxToVwMobile(36px);
     }
   }
@@ -433,7 +472,7 @@ $footer-border-color: darken($footer-background, 20%);
       max-height: pxToVwMobile(60 * 4px);
       transform: scale(1, 1);
     }
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       max-height: 0;
       transform: scale(1, 0);
       overflow: hidden;
@@ -450,19 +489,19 @@ $footer-border-color: darken($footer-background, 20%);
   position: relative;
   background-repeat: no-repeat;
   background-position: center top;
-  @media screen and (min-width: 1000px) {
+  @media (min-width: 1000px) {
     background-attachment: fixed;
   }
-  @media screen and (max-width: 999px) {
+  @media (max-width: 999px) {
     height: auto;
   }
   &__text {
-    @media screen and (min-width: 1000px) {
+    @media (min-width: 1000px) {
       position: absolute;
       top: 50%;
       transform: translate3d(0, -50%, 0);
     }
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       text-align: center;
       position: relative;
     }
@@ -484,13 +523,13 @@ $footer-border-color: darken($footer-background, 20%);
     transform: translate3d(0, -50%, 0);
   }
   > img {
-    @media screen and (min-width: 1000px) {
+    @media (min-width: 1000px) {
       position: absolute;
       top: 50%;
-      transform: translate3d(0, -50%, 0);
+      //transform: translate3d(0, -50%, 0);
     }
-    @media screen and (max-width: 999px) {
-      transform: translate3d(0, 0, 0);
+    @media (max-width: 999px) {
+      //transform: translate3d(0, 0, 0);
       margin: 0 auto;
       display: block;
       padding-top: pxToVwMobile(50px);
@@ -512,19 +551,19 @@ $home-section3-b-border: #333;
 
 .i-home {
   &__section {
-    @media screen and (min-width: 1000px) {
+    @media (min-width: 1000px) {
       height: pxToVw(900px);
       background-size: 100vw pxToVw(900px);
     }
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       min-height: pxToVwMobile(315px);
       background-size: auto pxToVwMobile(315px);
     }
     &-text {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         width: pxToVw(511px);
       }
-      @media screen and (max-width: 999px) {
+      @media (max-width: 999px) {
         padding: pxToVwMobile(35px) pxToVwMobile(72.5px);
         margin: pxToVwMobile(46px) auto 0;
         &:before, &:after {
@@ -553,7 +592,7 @@ $home-section3-b-border: #333;
         line-height: pxToVw(60px);
         margin-top: pxToVw(65px);
         border-radius: pxToVw(60px);
-        @media screen and (max-width: 999px) {
+        @media (max-width: 999px) {
           margin-top: pxToVwMobile(30px);
           width: pxToVwMobile(120px);
           height: pxToVwMobile(42px);
@@ -568,45 +607,46 @@ $home-section3-b-border: #333;
         border: 1px solid $home-section3-b-border;
         background: $home-section3-b-background;
       }
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         width: pxToVw(700px);
         > a {
           width: pxToVw(420px);
         }
       }
-      @media screen and (max-width: 999px) {
+      @media (max-width: 999px) {
         width: pxToVwMobile(230px);
       }
     }
     > img {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         width: pxToVw(1140px);
         height: pxToVw(700px);
+        margin-top: pxToVw(-350px);
       }
-      @media screen and (max-width: 999px) {
+      @media (max-width: 999px) {
         width: pxToVwMobile(360px);
         height: pxToVwMobile(222px);
       }
     }
   }
   &__section1 {
-    @media screen and (min-width: 1000px) {
+    @media (min-width: 1000px) {
       height: pxToVw(900px);
       background-size: 100vw pxToVw(900px);
-      @media screen and (max-width: 1280px) {
+      @media (max-width: 1280px) {
         height: pxToVw(950px);
         background-size: 100vw pxToVw(950px);
       }
     }
     &-text {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         left: 0;
         margin-left: pxToVw(240px);
       }
       > a {
         color: $home-section1-b-color;
         background-color: $home-section1-b-background;
-        @media screen and (max-width: 999px) {
+        @media (max-width: 999px) {
           border: 1px solid $home-section1-b-border;
         }
       }
@@ -616,7 +656,7 @@ $home-section3-b-border: #333;
     }
   }
   &__section2 {
-    @media screen and (min-width: 1000px) {
+    @media (min-width: 1000px) {
       &:before, &:after {
         content: '';
         position: absolute;
@@ -635,14 +675,14 @@ $home-section3-b-border: #333;
       }
     }
     &-text {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         left: 0;
         margin-left: pxToVw(1200px);
       }
       > a {
         color: $home-section2-b-color;
         background-color: $home-section2-b-background;
-        @media screen and (max-width: 999px) {
+        @media (max-width: 999px) {
           border: 1px solid $home-section2-b-border;
         }
       }
@@ -660,7 +700,7 @@ $home-section3-b-border: #333;
   }
   &__section4 {
     padding: pxToVw(150px) 0;
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       padding: pxToVwMobile(35px) 0 pxToVwMobile(5px) 0;
     }
     &-col {
@@ -675,7 +715,7 @@ $home-section3-b-border: #333;
         height: pxToVw(175px);
         margin-bottom: pxToVw(32px);
       }
-      @media screen and (max-width: 999px) {
+      @media (max-width: 999px) {
         width: pxToVwMobile(254px);
         margin: 0 auto pxToVwMobile(30px);
         > img {
@@ -686,10 +726,9 @@ $home-section3-b-border: #333;
         }
         p {
           position: absolute;
-          top: 50%;
+          top: 10%;
           left: pxToVwMobile(81px);
           right: 0;
-          transform: translateY(-50%);
         }
       }
     }
@@ -706,17 +745,17 @@ $sparring-section4-a-background: #94a6be;
 
 .i-sparring {
   &__section {
-    @media screen and (min-width: 1000px) {
+    @media (min-width: 1000px) {
       height: pxToVw(750px);
       background-size: 100vw pxToVw(750px);
     }
   }
   &__section1 {
-    @media screen and (min-width: 1000px) {
+    @media (min-width: 1000px) {
       height: pxToVw(880px);
       background-size: 100vw pxToVw(880px);
     }
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       height: pxToVwMobile(330px);
       background-size: cover;
     }
@@ -726,14 +765,14 @@ $sparring-section4-a-background: #94a6be;
         color: $sparring-section1-a-color;
         background-color: $sparring-section1-a-background;
         float: left;
-        @media screen and (min-width: 1000px) {
+        @media (min-width: 1000px) {
           margin-top: pxToVw(110px);
           width: pxToVw(300px);
           height: pxToVw(60px);
           line-height: pxToVw(60px);
           border-radius: pxToVw(60px);
         }
-        @media screen and (max-width: 999px) {
+        @media (max-width: 999px) {
           margin-top: pxToVwMobile(30px);
           width: pxToVwMobile(120px);
           height: pxToVwMobile(42px);
@@ -744,28 +783,28 @@ $sparring-section4-a-background: #94a6be;
           float: right;
         }
       }
-      @media screen and (max-width: 999px) {
+      @media (max-width: 999px) {
         width: pxToVwMobile(275px);
       }
     }
   }
   &__section2, &__section3 {
     > img {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         width: pxToVw(900px);
         height: pxToVw(750px);
       }
-      @media screen and (max-width: 999px) {
+      @media (max-width: 999px) {
         width: 100vw;
         height: pxToVwMobile(280px);
         padding-top: 0;
       }
     }
     &-text {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         width: pxToVw(615px);
       }
-      @media screen and (max-width: 999px) {
+      @media (max-width: 999px) {
         width: pxToVwMobile(173px);
         margin: 0 auto;
         padding: pxToVwMobile(54px) 0;
@@ -774,62 +813,62 @@ $sparring-section4-a-background: #94a6be;
   }
   &__section2 {
     > img {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         left: 0;
       }
     }
     &-text {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         left: pxToVw(1040px);
       }
     }
   }
   &__section3 {
     > img {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         right: 0;
       }
     }
     &-text {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         left: pxToVw(265px);
       }
     }
   }
   &__section4 {
     background-color: $sparring-section4-background;
-    @media screen and (min-width: 1000px) {
+    @media (min-width: 1000px) {
       padding: pxToVw(120px) 0;
     }
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       padding: pxToVwMobile(49px) 0;
     }
     &-app {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         width: pxToVw(990px);
       }
-      @media screen and (max-width: 999px) {
+      @media (max-width: 999px) {
         width: pxToVwMobile(250px);
       }
       margin: 0 auto;
       @extend .clearfix;
       img {
         float: left;
-        @media screen and (min-width: 1000px) {
+        @media (min-width: 1000px) {
           width: pxToVw(200px);
           height: pxToVw(200px);
         }
-        @media screen and (max-width: 999px) {
+        @media (max-width: 999px) {
           width: pxToVwMobile(65px);
           height: pxToVwMobile(65px);
         }
       }
       img.ercode {
-        @media screen and (min-width: 1000px) {
+        @media (min-width: 1000px) {
           width: pxToVw(256px);
           height: pxToVw(256px);
         }
-        @media screen and (max-width: 999px) {
+        @media (max-width: 999px) {
           float: none;
           display: block;
           margin: 0 auto;
@@ -841,11 +880,11 @@ $sparring-section4-a-background: #94a6be;
     }
     &-text {
       float: left;
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         width: pxToVw(372px);
         margin: 0 pxToVw(108px) 0 pxToVw(48px);
       }
-      @media screen and (max-width: 999px) {
+      @media (max-width: 999px) {
         width: pxToVwMobile(150px);
         margin-left: pxToVwMobile(35px);
       }
@@ -853,14 +892,14 @@ $sparring-section4-a-background: #94a6be;
         display: block;
         color: $sparring-section4-a-color;
         background-color: $sparring-section4-a-background;
-        @media screen and (min-width: 1000px) {
+        @media (min-width: 1000px) {
           margin-top: pxToVw(45px);
           width: pxToVw(368px);
           height: pxToVw(50px);
           border-radius: pxToVw(50px);
           line-height: pxToVw(50px);
         }
-        @media screen and (max-width: 999px) {
+        @media (max-width: 999px) {
           position: absolute;
           width: pxToVwMobile(178px);
           height: pxToVwMobile(45px);
@@ -888,22 +927,22 @@ $system-section6-background: #c5cfdc;
 
 .i-system {
   &__section {
-    @media screen and (min-width: 1000px) {
+    @media (min-width: 1000px) {
       height: pxToVw(750px);
       background-size: 100vw pxToVw(750px);
     }
   }
   &__section1 {
-    @media screen and (min-width: 1000px) {
+    @media (min-width: 1000px) {
       height: pxToVw(880px);
       background-size: 100vw pxToVw(880px);
     }
-    @media screen and (max-width: 999px) {
+    @media (max-width: 999px) {
       min-height: pxToVwMobile(273px);
       background-size: auto pxToVwMobile(273px);
     }
     &-article {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         margin-left: pxToVw(240px);
         right: auto;
         width: pxToVw(615px);
@@ -921,7 +960,7 @@ $system-section6-background: #c5cfdc;
         color: $system-section1-a-color;
         background-color: $system-section1-a-background;
         border: 1px solid $system-section1-a-border-color;
-        @media screen and (min-width: 1000px) {
+        @media (min-width: 1000px) {
           width: pxToVw(400px);
           height: pxToVw(60px);
           line-height: pxToVw(60px);
@@ -1031,11 +1070,11 @@ $system-section6-background: #c5cfdc;
   }
   &__section3, &__section4 {
     > img {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         width: pxToVw(950px);
         height: pxToVw(750px);
       }
-      @media screen and (max-width: 999px) {
+      @media (max-width: 999px) {
         width: 100vw;
         height: pxToVwMobile(280px);
         padding-top: 0;
@@ -1074,11 +1113,11 @@ $system-section6-background: #c5cfdc;
           }
         }
       }
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         width: pxToVw(570px);
         vertical-align: middle;
       }
-      @media screen and (max-width: 999px) {
+      @media (max-width: 999px) {
         width: pxToVwMobile(173px);
         margin: 0 auto;
         padding: pxToVwMobile(54px) 0;
@@ -1087,24 +1126,24 @@ $system-section6-background: #c5cfdc;
   }
   &__section3 {
     > img {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         left: 0;
       }
     }
     &-text {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         left: pxToVw(1080px);
       }
     }
   }
   &__section4 {
     > img {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         right: 0;
       }
     }
     &-text {
-      @media screen and (min-width: 1000px) {
+      @media (min-width: 1000px) {
         left: pxToVw(230px);
       }
     }
