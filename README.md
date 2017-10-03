@@ -3,7 +3,8 @@
 iQinban-ssr clone built with Vue 2.0 + vue-router + vuex, with server-side rendering.<br>
 Based on vue-hackernews-2.0<br>
 
-If you have any questions or suggestions, please submit a issue, thanks for all of yours.<br>
+If you have any questions or suggestions, please submit a issue.<br>
+And if this project was worked fine for you, please starred it.<br>
 
 **A detailed Vue SSR guide can be found [here](https://ssr.vuejs.org).**
 
