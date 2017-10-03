@@ -25,6 +25,7 @@ If you have any questions or suggestions, please submit a issue, thanks for all 
 - Animation system
 
 ## How to deploy?
+1. You should remove code comments (file: src/entry-client.js, line 56-58)
 1. You should to copy dist/,public/,node_modules/,manifest.json,package.json,server.js to the server.<br>
 2. Run "cd" to the server's root directory
 3. Run "pm2 start server.js --name 'your project name'"
