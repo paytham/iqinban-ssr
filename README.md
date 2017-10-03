@@ -6,9 +6,13 @@ Based on vue-hackernews-2.0
 **A detailed Vue SSR guide can be found [here](https://ssr.vuejs.org).**
 
 ## ChangeLog
-- 2017/10/02
+- v1.1.0-20171003
+  - Emergency fixes two bugs that can cause the server to fall into an unrecoverable state
+- v1.0.2-10171003
+  - Update animation system
+- v1.0.1-20171002
   - Add animation system
-- 2017/10/01
+- v1.0.0-20171001
   - Create
 
 ## Features
