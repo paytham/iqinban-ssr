@@ -1,7 +1,9 @@
 # iQinban-ssr
 
 iQinban-ssr clone built with Vue 2.0 + vue-router + vuex, with server-side rendering.<br>
-Based on vue-hackernews-2.0
+Based on vue-hackernews-2.0<br>
+
+If you have any questions or suggestions, please submit a issue, thanks for all of yours.<br>
 
 **A detailed Vue SSR guide can be found [here](https://ssr.vuejs.org).**
 
@@ -21,6 +23,13 @@ Based on vue-hackernews-2.0
 - Vm Layout
 - Server side render
 - Animation system
+
+## How to deploy?
+1. You should to copy dist/,public/,manifest.json,package.json,server.js to the server.<br>
+2. Cd to the root directory
+3. Run pm2 start server.js --name 'your project name'
+
+**A detail pm2 guide can be found [here](http://pm2.keymetrics.io/docs/usage/quick-start/).**
 
 ## Build Setup
 
