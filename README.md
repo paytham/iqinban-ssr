@@ -19,10 +19,11 @@ If you have any questions or suggestions, please submit a issue, thanks for all 
 
 ## Features
 - Multi-device support
-- Most of browser support
-- Vm Layout
+- Most of browsers support
+- Vw Layout
 - Server side render
 - Animation system
+- service workers support
 
 ## How to deploy?
 1. You should remove code comments (file: src/entry-client.js, line 56-58)
