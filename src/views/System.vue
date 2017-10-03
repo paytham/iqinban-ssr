@@ -4,101 +4,140 @@
     <section class="i-section i-system__section i-system__section1"
              v-lazy:background-image="imgUrl + '/section2.jpeg'">
       <div class="i-section__article i-system__section1-article">
-        <h1>错漏快慢，一目了然</h1>
-        <p class="p1">智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈</p>
-        <a class="b" href="javascript:">前往购买</a>
+        <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">错漏快慢，一目了然</h1>
+        <p class="p1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">
+          智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈
+        </p>
+        <a class="b wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms" href="javascript:">前往购买</a>
       </div>
     </section>
     <section class="i-section i-system__section i-system__section2">
       <i-row class="container-fluid">
         <i-col v-for="i in 3" :key="i" :span="4">
           <div class="i-system__section2-article">
-            <h2>错漏快慢，一目了然</h2>
-            <p class="p2">智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈</p>
-            <a class="b" href="javascript:">前往购买</a>
+            <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">错漏快慢，一目了然</h2>
+            <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈</p>
+            <a class="b wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms" href="javascript:">前往购买</a>
           </div>
         </i-col>
       </i-row>
       <div class="i-system__section2-container">
-        <h2>错漏快慢，一目了然</h2>
+        <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">错漏快慢，一目了然</h2>
         <i-row>
           <i-col :span="3" v-for="i in 4" :key="i">
             <div class="i-system__section2-title">
-              <img alt="icon" v-lazy="imgUrl + '/logo.png'">
-              <p class="p1">智能纠错系统采用基于机器学习</p>
+              <img alt="icon" v-lazy="imgUrl + '/logo.png'" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">
+              <p class="p1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">智能纠错系统采用基于机器学习</p>
             </div>
           </i-col>
         </i-row>
       </div>
     </section>
     <section class="i-section i-system__section i-system__section3">
-      <img alt="pic1" v-lazy="imgUrl + '/pic1.jpeg'">
+      <img alt="pic1" v-lazy="imgUrl + '/pic1.jpeg'" class="wow fadeInLeft" data-wow-duration="2s">
       <div class="i-section__text i-system__section3-text">
-        <h3><img alt="icon" v-lazy="imgUrl + '/logo.png'"><span>错漏快慢，一目了然</span></h3>
-        <p class="p2">智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈</p>
+        <h3>
+          <img alt="icon" v-lazy="imgUrl + '/logo.png'" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">
+          <span class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">错漏快慢，一目了然</span>
+        </h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
+          智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈
+        </p>
       </div>
     </section>
     <section class="i-section i-system__section i-system__section4">
-      <img alt="pic1" v-lazy="imgUrl + '/pic2.jpeg'">
+      <img alt="pic1" v-lazy="imgUrl + '/pic2.jpeg'" class="wow fadeInRight" data-wow-duration="2s">
       <div class="i-section__text i-system__section4-text">
-        <h3><img alt="icon" v-lazy="imgUrl + '/logo.png'"><span>错漏快慢，一目了然</span></h3>
-        <p class="p2">智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈</p>
+        <h3>
+          <img alt="icon" v-lazy="imgUrl + '/logo.png'" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">
+          <span class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">错漏快慢，一目了然</span>
+        </h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
+          智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈
+        </p>
       </div>
     </section>
     <section class="i-section i-system__section i-system__section3">
-      <img alt="pic1" v-lazy="imgUrl + '/pic3.jpeg'">
+      <img alt="pic1" v-lazy="imgUrl + '/pic3.jpeg'" class="wow fadeInLeft" data-wow-duration="2s">
       <div class="i-section__text i-system__section3-text">
-        <h3><img alt="icon" v-lazy="imgUrl + '/logo.png'"><span>错漏快慢，一目了然</span></h3>
-        <p class="p2">智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈</p>
+        <h3>
+          <img alt="icon" v-lazy="imgUrl + '/logo.png'" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">
+          <span class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">错漏快慢，一目了然</span>
+        </h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
+          智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈
+        </p>
       </div>
     </section>
     <section class="i-section i-system__section i-system__section4">
-      <img alt="pic1" v-lazy="imgUrl + '/pic4.jpeg'">
+      <img alt="pic1" v-lazy="imgUrl + '/pic4.jpeg'" >
       <div class="i-section__text i-system__section4-text">
-        <h3><img alt="icon" v-lazy="imgUrl + '/logo.png'"><span>错漏快慢，一目了然</span></h3>
-        <p class="p2">智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈</p>
+        <h3>
+          <img alt="icon" v-lazy="imgUrl + '/logo.png'" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">
+          <span class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">错漏快慢，一目了然</span>
+        </h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
+          智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈
+        </p>
       </div>
     </section>
     <section class="i-section i-system__section i-system__section2 i-system__section5">
       <div class="i-system__section2-container i-system__section5-container">
-        <h2>错漏快慢，一目了然</h2>
+        <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">错漏快慢，一目了然</h2>
         <i-row>
           <i-col :span="4" v-for="i in 3" :key="i">
             <div class="i-system__section2-title">
-              <img alt="icon" v-lazy="imgUrl + '/logo.png'">
-              <p class="p1">智能纠错系统采用基于机器学习</p>
+              <img alt="icon" v-lazy="imgUrl + '/logo.png'" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">
+              <p class="p1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">智能纠错系统采用基于机器学习</p>
             </div>
           </i-col>
         </i-row>
       </div>
     </section>
     <section class="i-section i-system__section i-system__section3">
-      <img alt="pic1" v-lazy="imgUrl + '/pic1.jpeg'">
+      <img alt="pic1" v-lazy="imgUrl + '/pic1.jpeg'" class="wow fadeInLeft" data-wow-duration="2s">
       <div class="i-section__text i-system__section3-text">
-        <h3><img alt="icon" v-lazy="imgUrl + '/logo.png'"><span>错漏快慢，一目了然</span></h3>
-        <p class="p2">智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈</p>
+        <h3>
+          <img alt="icon" v-lazy="imgUrl + '/logo.png'" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">
+          <span class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">错漏快慢，一目了然</span>
+        </h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
+          智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈
+        </p>
       </div>
     </section>
     <section class="i-section i-system__section i-system__section4">
-      <img alt="pic1" v-lazy="imgUrl + '/pic2.jpeg'">
+      <img alt="pic1" v-lazy="imgUrl + '/pic2.jpeg'" class="wow fadeInRight" data-wow-duration="2s">
       <div class="i-section__text i-system__section4-text">
-        <h3><img alt="icon" v-lazy="imgUrl + '/logo.png'"><span>错漏快慢，一目了然</span></h3>
-        <p class="p2">智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈</p>
+        <h3>
+          <img alt="icon" v-lazy="imgUrl + '/logo.png'" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">
+          <span class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">错漏快慢，一目了然</span>
+        </h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
+          智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈
+        </p>
       </div>
     </section>
     <section class="i-section i-system__section i-system__section3">
-      <img alt="pic1" v-lazy="imgUrl + '/pic3.jpeg'">
+      <img alt="pic1" v-lazy="imgUrl + '/pic3.jpeg'" class="wow fadeInLeft" data-wow-duration="2s">
       <div class="i-section__text i-system__section3-text">
-        <h3><img alt="icon" v-lazy="imgUrl + '/logo.png'"><span>错漏快慢，一目了然</span></h3>
-        <p class="p2">智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈</p>
+        <h3>
+          <img alt="icon" v-lazy="imgUrl + '/logo.png'" class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">
+          <span class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">错漏快慢，一目了然</span>
+        </h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
+          智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈
+        </p>
       </div>
     </section>
     <section class="i-section i-system__section i-system__section4 i-system__section6">
-      <img alt="pic1" v-lazy="imgUrl + '/pic4.jpeg'">
+      <img alt="pic1" v-lazy="imgUrl + '/pic4.jpeg'" class="wow fadeInRight" data-wow-duration="2s">
       <div class="i-section__text i-system__section4-text">
         <div class="i-system__section6-text" v-for="i in 3" :key="i">
-          <h2>错漏快慢，一目了然</h2>
-          <p class="p2">智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈</p>
+          <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">错漏快慢，一目了然</h2>
+          <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">
+            智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈
+          </p>
         </div>
       </div>
     </section>
@@ -108,6 +147,7 @@
 <script>
   import IRow from '../components/Row.vue'
   import ICol from '../components/Col.vue'
+  import { wowMixin } from '../client/wow'
 
   export default {
     name: 'System',
@@ -115,6 +155,7 @@
       IRow,
       ICol
     },
+    mixins: [wowMixin],
     title () {
       return '琴伴 | 教学管理系统'
     },

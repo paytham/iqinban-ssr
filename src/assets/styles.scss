@@ -33,9 +33,22 @@
     transform: none;
   }
 }
-
 .fadeInUp {
   animation-name: fadeInUp;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInDown {
+  animation-name: fadeInDown;
 }
 
 @keyframes fadeInLeft {
@@ -48,9 +61,13 @@
     transform: none;
   }
 }
-
 .fadeInLeft {
-  animation-name: fadeInLeft;
+  @media (min-width: 1000px) {
+    animation-name: fadeInLeft;
+  }
+  @media (max-width: 999px) {
+    animation-name: fadeInDown;
+  }
 }
 
 @keyframes fadeInRight {
@@ -63,9 +80,27 @@
     transform: none;
   }
 }
-
 .fadeInRight {
-  animation-name: fadeInRight;
+  @media (min-width: 1000px) {
+    animation-name: fadeInRight;
+  }
+  @media (max-width: 999px) {
+    animation-name: fadeInDown;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale3d(0, 0, 1);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
 }
 /*----- end animate -----*/
 
@@ -247,36 +282,17 @@ $header-opaque-background: #fff;
     @media (min-width: 1000px) {
       opacity: 1;
     }
-    > a {
-      float: left;
-      position: relative;
-      padding: 0 30px;
-      font-size: pxToVw(16px);
-      @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1279px) and (min-width: 1000px) {
-        font-size: pxToVw(24px);
-      }
-      @media (max-width: 575px) {
-        font-size: pxToVwMobile(14px);
-      }
-      @media (max-width: 999px) and (min-width: 576px) {
-        font-size: pxToVwMobile(8px);
-      }
-      color: $nav-color;
-      &.is-active {
-        color: $nav-active-color;
-      }
-    }
     @media (max-width: 999px) {
       position: fixed;
       left: 0;
       right: 0;
       height: pxToVwMobile(275px);
-      transform: scale(1, 0);
+      transform: scale3d(1, 0, 1);
       transform-origin: 0 0;
       transition: transform 350ms ease-out;
       &.is-active {
         opacity: 1;
-        transform: scale(1, 1);
+        transform: scale3d(1, 1, 1);
         background: $nav-active-background;
         -webkit-backdrop-filter: blur(5px);
         > a {
@@ -302,7 +318,33 @@ $header-opaque-background: #fff;
           }
         }
       }
-      > a {
+      @media (max-width: 575px) {
+        top: 50px;
+      }
+      @media (min-width: 576px) {
+        top: 60px;
+      }
+      @media (min-width: 576px) and (orientation: landscape) {
+        top: 50px;
+      }
+    }
+    > a {
+      padding: 0 30px;
+      color: $nav-color;
+      &.is-active {
+        color: $nav-active-color;
+      }
+      font-size: pxToVw(16px);
+      @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1279px) and (min-width: 1000px) {
+        font-size: pxToVw(24px);
+      }
+      @media (max-width: 575px) {
+        font-size: pxToVwMobile(14px);
+      }
+      @media (max-width: 999px) and (min-width: 576px) {
+        font-size: pxToVwMobile(8px);
+      }
+      @media (max-width: 999px) {
         display: block;
         float: none;
         line-height: pxToVwMobile(45px);
@@ -320,12 +362,13 @@ $header-opaque-background: #fff;
         opacity: 0;
         transform: translate3d(0, -100%, 0);
         transition: all 500ms ease-in;
+        @media (orientation: landscape) {
+          line-height: pxToVwMobile(30px);
+        }
       }
-      @media (max-width: 575px) {
-        top: 50px;
-      }
-      @media (min-width: 576px) {
-        top: 60px;
+      @media (min-width: 1000px) {
+        float: left;
+        position: relative;
       }
     }
   }
@@ -748,6 +791,9 @@ $sparring-section4-a-background: #94a6be;
     @media (min-width: 1000px) {
       height: pxToVw(750px);
       background-size: 100vw pxToVw(750px);
+      > img {
+        margin-top: pxToVw(-375px);
+      }
     }
   }
   &__section1 {
@@ -930,6 +976,9 @@ $system-section6-background: #c5cfdc;
     @media (min-width: 1000px) {
       height: pxToVw(750px);
       background-size: 100vw pxToVw(750px);
+      > img {
+        margin-top: pxToVw(-375px);
+      }
     }
   }
   &__section1 {
@@ -1271,8 +1320,8 @@ $system-section6-background: #c5cfdc;
       > p.p1 {
         @media (max-width: 999px) {
           right: 0;
-          top: 50%;
-          transform: translate3d(0, -50%, 0);
+          top: 15%;
+          //transform: translate3d(0, -50%, 0);
           position: absolute;
           left: pxToVwMobile(72px);
         }

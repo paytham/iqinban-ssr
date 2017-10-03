@@ -4,14 +4,14 @@
     <section class="i-section i-privacy__section1"
              v-lazy:background-image="imgUrl + '/section2.jpeg'">
       <div class="i-section__article i-privacy__section1-article">
-        <h1>错漏快慢，一目了然</h1>
-        <p class="p2">这是一段测试文字测试文字</p>
+        <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">错漏快慢，一目了然</h1>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">这是一段测试文字测试文字</p>
       </div>
     </section>
     <section class="i-section i-privacy__section2">
       <div class="i-privacy__section2-container">
-        <h3>承诺</h3>
-        <p class="p2">我们致力于保护您在使用我们网站时所提供的私隐、私人资料以及个人的资料( 统称 "个人资料" ), 使我们在收集、使用、储存和传送个人资料方面符合 (与个人资料私隐有关的法律法规) 及消费者保护方面的最高标准。
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">承诺</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="550ms">我们致力于保护您在使用我们网站时所提供的私隐、私人资料以及个人的资料( 统称 "个人资料" ), 使我们在收集、使用、储存和传送个人资料方面符合 (与个人资料私隐有关的法律法规) 及消费者保护方面的最高标准。
         为确保您对我们在处理个人资料上有充分信心, 您切要详细阅读及理解隐私政策的条文。特别是您一旦使用我们的网站, 将被视为接受、同意、承诺和确认:
         您在自愿下连同所需的同意向我们披露个人资料;
         您会遵守本隐私政策的全部条款和限制;
@@ -21,13 +21,13 @@
         被收集的个人资料的种类
         经您同意, 我们会收集、管理和监控个人资料。为了向您提供我们的各项服务, 您需要供給那些我们认为为达到你的指示和进一步改善我们的服务所需的个人资料和不具名的资料, 包括但不限于:
         </p>
-        <h3>个人资料</h3>
-        <p class="p2">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="750ms">个人资料</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="800ms">
           -您的姓名、性别、年龄、出生日期、、电话号码、传真号码、住址或通讯地址、电子邮箱地址。<br>
           不具名的资料
         </p>
-        <h3>收集个人资料及不具名的资料的目的及用途如下:</h3>
-        <p class="p2">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">收集个人资料及不具名的资料的目的及用途如下:</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1050ms">
           通过我们的网站向您提供我们的各项服务；
           当您使用我们的网站时, 能辨认及确认您的身份；
           让您使用我们的网站时得到为您而设的感受；
@@ -42,20 +42,20 @@
           处理在您要求下的任何付款指示, 直接扣帐及/或信用安排；
           使您能运作您的账户及/或使我们能从账户支取尚欠的服务费。
         </p>
-        <h3>Cookies</h3>
-        <p class="p2">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">Cookies</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="550ms">
           当您到访我们网站时, 我们通过cookies使用Google Stats去记录我们的业绩以及核对在线广告的效果。Cookie是发送到您的浏览器上并在您的电脑硬盘驱动器上存储的小量数据。只有当您使用您的电脑进入我们网站时, Cookie才能够被发送到您的电脑硬盘上。 Cookies常用于记录访问者浏览我们网站上的各个项目时的习惯以及偏好。Cookies所搜集的资料是不记名的集体统计数据, 不载有个人资料。Cookies不能用于取得您的硬盘上的数据、您的电邮地址、及您的私人数据。当您重新上访我们网站时, 可以省却您再次登记的步骤。大多数浏览器都预设为可以接受Cookies。您可以选择将您的浏览器设定为不接受Cookies, 或如果Cookies一被装上就通知您。不过, 若设定为禁止Cookies, 您或许便不能启动或使用我们网站的某些功能。
           若您不禁止或除去cookies, 每次您使用同一台电脑进入我们的网站时, 我们的网络服务器会通知我们你上访了我们网站, 继而我们会辨认出您及接达您的登记数据及付款数据, 搜集有关使用量、巿场研究、行迹进程及参与推广活动的资料等。
           您可以改动您用来进入我们网站的电脑的浏览器上的设定来决定是否接受cookie。若您愿意, 您可以改变浏览器上的设定。若您将您的偏好放在浏览器上, 让您可以接受所有的cookies, 收到cookies发出的通知, 甚至可以拒绝一切cookies。然而, 若在您的浏览器选用不要cookies或拒绝所有cookies, 您有可能不能使用或启动我们网站的某些功能, 或有可能需要重新登入您的资料。
         </p>
-        <h3>保存个人资料及不具名资料</h3>
-        <p class="p2">您提供给我们的个人资料及不具名资料, 只保留到搜集的目的已达到的时候, 除非应适用的法律法规之规定而继续保留。</p>
-        <h3>个人资料的拥有权及披露</h3>
-        <p class="p2">在我们网站上所搜集的一切资料都由我们所拥有, 不会出租或出售给任何无关的第三方。然而, 个人资料可以披露给:</p>
-        <h3>直销</h3>
-        <p class="p2">一旦向我们提供了您的个人资料, 您可能会收到我们或我们的分公司而发给你的电话、电邮和直销通讯。若您不希望收到我们的直销和推广资料, 请按照下列地址写信给我们。我们会尊重您的要求, 不再在直销活动上使用您的个人资料。</p>
-        <h3>个人资料的保护</h3>
-        <p class="p2">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="750ms">保存个人资料及不具名资料</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="800ms">您提供给我们的个人资料及不具名资料, 只保留到搜集的目的已达到的时候, 除非应适用的法律法规之规定而继续保留。</p>
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">个人资料的拥有权及披露</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.05s">在我们网站上所搜集的一切资料都由我们所拥有, 不会出租或出售给任何无关的第三方。然而, 个人资料可以披露给:</p>
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.25s">直销</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.3s">一旦向我们提供了您的个人资料, 您可能会收到我们或我们的分公司而发给你的电话、电邮和直销通讯。若您不希望收到我们的直销和推广资料, 请按照下列地址写信给我们。我们会尊重您的要求, 不再在直销活动上使用您的个人资料。</p>
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s">个人资料的保护</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.55s">
           我们实施妥适的实物、电子、管理及技术方面的措施来保护和保障您的个人资料的安全。我们尽力确保通过我们网站所搜集的任何个人资料皆免于任何与我们无关的第三者的滋扰。我们采取的安全措施包括但不限于:
           实物措施: 存有您个人资料的记录会被存放在有锁的地方。
           电子措施: 存有您个人资料的电脑数据会被存放在受严格登入限制的电脑系统和存储媒体上。
@@ -65,10 +65,10 @@
           若您知悉我们的网站上有任何安全方面的漏洞, 请不要遟疑去联絡我们, 使我们可以尽快采取妥适的行动。
           尽管实施了上述技术和保安的措施, 我们不能保证资料在互联网上的输送绝对安全, 因此我们不能绝对保证您通过我们网站提供给我们的个人资料在一切时候都是安全的。对任何因未经授权而接触您个人资料所发生的事件我们一槪不承担责任, 于这方面产生或导致的任何损失或损害, 我们也不负责赔偿。
         </p>
-        <h3>未成年人</h3>
-        <p class="p2">若任何家长或监护人相信有未成年人在未经家长或监护人批准或同意下向我们提供了个人资料, 请随便联系我们的客户服务部, 以确保该资料被除去, 并从我们的促销名单中撤下。</p>
-        <h3>接达及更正个人资料</h3>
-        <p class="p2">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">未成年人</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="550ms">若任何家长或监护人相信有未成年人在未经家长或监护人批准或同意下向我们提供了个人资料, 请随便联系我们的客户服务部, 以确保该资料被除去, 并从我们的促销名单中撤下。</p>
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.75s">接达及更正个人资料</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
         您有权:
         查询我们是否持有您的任何个人资料;
         接达我们所持有的您的个人资料;
@@ -82,21 +82,24 @@
         当另外一個人的个人资料也包含在同一份记录中。
         若您欲接达或更正个人资料, 或索取有关个人资料的政策、执行方法和被持有的个人资料的种类, 应致函到我们的下列的地址。 要求接达或更正资料可能要付合理的处理费用。
         </p>
-        <h3>安全保管您的密码</h3>
-        <p class="p2">除了我们致力确保您的个人资料存放和处理的安全外, 您不应向任何人披露您的登录密码或帐户资料, 以保护您的个人资料。每当您登录我们网站时, 尤其是当您使用他人的电脑或者是公共的互联网终端机时, 请记着操作完毕后一定要点击退出。您的努力和协助对于我们保护您的个人资料绝对有帮助。
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">安全保管您的密码</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.05s">除了我们致力确保您的个人资料存放和处理的安全外, 您不应向任何人披露您的登录密码或帐户资料, 以保护您的个人资料。每当您登录我们网站时, 尤其是当您使用他人的电脑或者是公共的互联网终端机时, 请记着操作完毕后一定要点击退出。您的努力和协助对于我们保护您的个人资料绝对有帮助。
         </p>
-        <h3>隐私政策的修改</h3>
-        <p class="p2">本隐私政策可以不时( 无需事先向您通知 )被修改。任何对隐私政策的修改都会刊登在我们网站上。</p>
-        <h3>联系我们</h3>
-        <p class="p2">若您对我们的隐私政策有任何问题或憂慮, 欢迎随时联系我们。</p>
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.25s">隐私政策的修改</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.3s">本隐私政策可以不时( 无需事先向您通知 )被修改。任何对隐私政策的修改都会刊登在我们网站上。</p>
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s">联系我们</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.55s">若您对我们的隐私政策有任何问题或憂慮, 欢迎随时联系我们。</p>
       </div>
     </section>
   </main>
 </template>
 
 <script>
+  import { wowMixin } from '../client/wow'
+
   export default {
     name: 'Privacy',
+    mixins: [wowMixin],
     title () {
       return '琴伴 | 隐私条款'
     },
