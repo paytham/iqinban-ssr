@@ -25,9 +25,9 @@ If you have any questions or suggestions, please submit a issue, thanks for all 
 - Animation system
 
 ## How to deploy?
-1. You should to copy dist/,public/,manifest.json,package.json,server.js to the server.<br>
-2. Cd to the root directory
-3. Run pm2 start server.js --name 'your project name'
+1. You should to copy dist/,public/,node_modules/,manifest.json,package.json,server.js to the server.<br>
+2. Run "cd" to the server's root directory
+3. Run "pm2 start server.js --name 'your project name'"
 
 **A detail pm2 guide can be found [here](http://pm2.keymetrics.io/docs/usage/quick-start/).**
 
