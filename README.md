@@ -11,7 +11,7 @@ And if this project was worked fine for you, please starred it.<br>
 ## ChangeLog
 - v1.1.0-20171003
   - Emergency fixes two bugs that can cause the server to fall into an unrecoverable state
-- v1.0.2-10171003
+- v1.0.2-20171003
   - Update animation system
 - v1.0.1-20171002
   - Add animation system
@@ -24,7 +24,7 @@ And if this project was worked fine for you, please starred it.<br>
 - Vw Layout
 - Server side render
 - Animation system
-- service workers support
+- Service workers support
 
 ## How to deploy?
 1. You should remove code comments (file: src/entry-client.js, line 56-58)
