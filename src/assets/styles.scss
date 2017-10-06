@@ -916,8 +916,9 @@ $sparring-section4-a-background: #94a6be;
         }
         @media (max-width: 999px) {
           float: none;
+          position: relative;
+          left: 0;
           display: block;
-          margin: 0 auto;
           padding: pxToVwMobile(107px) 0 0 0;
           width: pxToVwMobile(130px);
           height: pxToVwMobile(130px);
@@ -1395,7 +1396,7 @@ $help-section3-background: #e4e8ee;
     @media (min-width: 1000px) {
       height: pxToVw(410px);
     }
-    @media (max-height: 999px) {
+    @media (max-width: 999px) {
       height: pxToVwMobile(235px);
     }
   }
