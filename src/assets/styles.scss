@@ -132,8 +132,8 @@ h3 {
   font-size: pxToVw(24px);
   line-height: pxToVw(28px);
   @media (max-width: 999px) {
-    font-size: pxToVwMobile(24px);
-    line-height: pxToVwMobile(28px);
+    font-size: pxToVwMobile(16px);
+    line-height: pxToVwMobile(21px);
   }
 }
 p.p1 {
@@ -150,8 +150,8 @@ p.p2, label.p2 {
   font-size: pxToVw(17px);
   line-height: pxToVw(26px);
   @media (max-width: 999px) {
-    font-size: pxToVwMobile(16px);
-    line-height: pxToVwMobile(21px);
+    font-size: pxToVwMobile(14px);
+    line-height: pxToVwMobile(18px);
   }
 }
 p.p3 {
@@ -1395,6 +1395,9 @@ $help-section3-background: #e4e8ee;
     @media (min-width: 1000px) {
       height: pxToVw(410px);
     }
+    @media (max-height: 999px) {
+      height: pxToVwMobile(235px);
+    }
   }
   &__section2 {
     @media (min-width: 1000px) {
@@ -1408,6 +1411,9 @@ $help-section3-background: #e4e8ee;
         margin-top: pxToVw(80px);
         margin-bottom: pxToVw(25px);
       }
+      @media (max-width: 999px) {
+        margin-top: pxToVwMobile(43px);
+      }
     }
     &-container {
       @extend .clearfix;
@@ -1415,19 +1421,30 @@ $help-section3-background: #e4e8ee;
         width: pxToVw(720px);
         margin: 0 auto pxToVw(45px);
       }
+      @media (max-width: 999px) {
+        padding: 0 pxToVwMobile(7px);
+      }
       > h3 {
+        float: left;
         @media (min-width: 1000px) {
-          float: left;
           width: pxToVw(120px);
           margin: 0 pxToVw(30px);
           text-align: center;
         }
+        @media (max-width: 999px) {
+          width: 25%;
+          text-align: center;
+          padding: pxToVwMobile(21px) 0 pxToVwMobile(25px);
+        }
       }
     }
     &-list {
+      margin: 0 auto;
       @media (min-width: 1000px) {
         width: pxToVw(460 * 3px);
-        margin: 0 auto;
+      }
+      @media (max-width: 999px) {
+        width: pxToVwMobile(300px);
       }
     }
     &-item {
@@ -1436,11 +1453,17 @@ $help-section3-background: #e4e8ee;
         padding: 0 pxToVw(40px);
         margin-bottom: pxToVw(40px);
       }
+      @media (max-width: 999px) {
+        margin-bottom: pxToVwMobile(37px);
+      }
       > img {
         display: block;
+        width: 100%;
         @media (min-width: 1000px) {
           height: pxToVw(346px);
-          width: 100%;
+        }
+        @media (max-width: 999px) {
+          height: pxToVwMobile(273px);
         }
       }
       > p.p1 {
@@ -1456,10 +1479,17 @@ $help-section3-background: #e4e8ee;
     @media (min-width: 1000px) {
       padding: pxToVw(83px) 0 pxToVw(93px);
     }
+    @media (max-width: 999px) {
+      padding: pxToVwMobile(43px) 0 pxToVwMobile(56px);
+    }
     > p.p1 {
       @media (min-width: 1000px) {
         width: pxToVw(1000px);
         margin:0 auto pxToVw(45px);
+      }
+      @media (max-width: 999px) {
+        width: pxToVwMobile(300px);
+        margin: 0 auto pxToVwMobile(25px);
       }
       &.is-last {
         margin-bottom: 0;
@@ -1470,6 +1500,9 @@ $help-section3-background: #e4e8ee;
     @media (min-width: 1000px) {
       padding: pxToVw(80px) 0;
     }
+    @media (max-width: 999px) {
+      padding: pxToVwMobile(43px) 0 pxToVwMobile(35px);
+    }
     > h2 {
       margin-left: auto;
       margin-right: auto;
@@ -1477,13 +1510,20 @@ $help-section3-background: #e4e8ee;
       @media (min-width: 1000px) {
         margin-bottom: pxToVw(46px);
       }
+      @media (max-width: 999px) {
+        margin-bottom: pxToVwMobile(25px);
+      }
     }
     &-item {
+      margin-left: auto;
+      margin-right: auto;
       @media (min-width: 1000px) {
         width: pxToVw(1000px);
-        margin-left: auto;
-        margin-right: auto;
         margin-bottom: pxToVw(45px);
+      }
+      @media (max-width: 999px) {
+        width: pxToVwMobile(285px);
+        margin-bottom: pxToVwMobile(25px);
       }
       &.is-last {
         margin-bottom: 0;
@@ -1491,6 +1531,9 @@ $help-section3-background: #e4e8ee;
       > h3 {
         @media (min-width: 1000px) {
           margin-bottom: pxToVw(25px);
+        }
+        @media (max-width: 999px) {
+          margin-bottom: pxToVwMobile(8px);
         }
       }
     }
