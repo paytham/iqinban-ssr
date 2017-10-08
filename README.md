@@ -28,9 +28,9 @@ And if this project was worked fine for you, please starred it.<br>
 
 ## How to deploy?
 1. You should remove code comments (file: src/entry-client.js, line 56-58)
-1. You should to copy dist/,public/,node_modules/,manifest.json,package.json,server.js to the server.<br>
+1. You should to copy files to the server.<br>
 2. Run "cd" to the server's root directory
-3. Run "pm2 start server.js --name 'your project name'"
+3. Run "pm2 start process.json"
 
 **A detail pm2 guide can be found [here](http://pm2.keymetrics.io/docs/usage/quick-start/).**
 
