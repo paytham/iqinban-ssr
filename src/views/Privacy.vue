@@ -10,8 +10,8 @@
     </section>
     <section class="i-section i-privacy__section2">
       <div class="i-privacy__section2-container">
-        <!--<h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms"></h3>-->
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="550ms">
+        <!--<h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms"></h3>-->
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           用户信息包括：<br>
           1）用户自行提供的用户信息，包括但不限于注册“琴伴”用户及设置用户帐号时填写的手机号码、微信帐号、微博帐号、电子邮件地址
           等，以及使用服务时提供的共享信息；<br>

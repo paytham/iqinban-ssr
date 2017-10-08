@@ -10,15 +10,15 @@
     </section>
     <section class="i-section i-privacy__section2">
       <div class="i-privacy__section2-container">
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">特别提示</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="550ms">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">特别提示</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           欢迎使用上海智凌信息技术有限公司（以下简称“智凌信息”）提供的“琴伴”网页版服务。请您（个人或单一实体，以下简称“用户”）
           在使用该应用或服务之前，仔细阅读以下全部内容（特别是免除或者限制智凌信息责任的免责条款以及对用户的权利限制等内容），
           并确保您充分理解本协议中各条款。请您审慎阅读并在自主、充分考虑风险后选择接受或不接受本协议。未成年人则应在法定监护人
           陪同下阅读和选择。
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="750ms">一、服务协议的确认和接纳</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="800ms">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">一、服务协议的确认和接纳</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           1、本协议是用户与智凌信息之间关于用户使用“琴伴”网页版服务的法律协议，内容包括协议正文、智凌信息已经发布的或将来可能
           发布的各类规则。所有规则为本协议不可分割的组成部分，与协议正文具有同等法律效力。除另行明确声明外，用户使用“琴伴”网页
           版服务的行为将受本协议约束。<br><br>
@@ -28,8 +28,8 @@
           本。在智凌信息修改上述文本后，如果您不接受修改后的协议，您可以选择终止使用“琴伴”网页版服务。如果您继续使用，则将被
           视为已接受了修改后的协议。
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">二、服务内容</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1050ms">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">二、服务内容</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           本协议所称的“琴伴”是指智凌信息自主设计、研发、拥有和运营的专注于钢琴教育及陪练的在线音乐教育产品，依托自主知识产权
           的曲谱生成／解析算法、音视频信号识别算法、大数据分析、智能投影设备和学生-教师-机构三端构成的业务闭环，为用户提供全
           新的在线钢琴教育体验。<br><br>
@@ -37,8 +37,8 @@
           载应用并试用等等，并可在注册、登录后享受更为完整的服务（创建自己的线上钢琴培训服务机构、上传／编辑／管理在线教学资源，
           创建班级和课程、与教师／学生进行各类教学互动、管理教学过程、分析数据／评估教学效果等）。
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">三、服务的变更或中止</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="550ms">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">三、服务的变更或中止</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           1、智凌信息将不断追求优化和改进服务。在此过程中，智凌信息可能会增加或删除“琴伴”网页版的部分服务，也可能暂停、中断
           或终止“琴伴”网页版部分或全部服务。同时，鉴于网络服务环境的特殊性，智凌信息也可能会随时变更、中断或终止“琴伴”网页版
           部分或全部服务（包括收费服务）。<br><br>
@@ -51,8 +51,8 @@
           3）按照法律规定或有权机关的要求；<br>
           4）出于安全的原因或其他必要的情形。
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="750ms">四、账号管理</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="800ms">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">四、账号管理</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           1、用户在使用“琴伴”网页版完整服务前需要注册一个“琴伴”网页版帐号。用户可以使用手机号码、微信帐号或电子邮件地址
           来进行绑定注册。智凌信息要求用户：注册用的手机号码、微信账号或电子邮件地址尚未与“琴伴”网页版帐号绑定、且未被智
           凌信息根据本协议封禁。智凌信息可以根据用户需求或产品需要对帐号注册和绑定的方式进行变更，而无须事先通知用户。<br><br>
@@ -69,8 +69,8 @@
           6、如用户注册“琴伴”网页版帐号后365天内未登录，智凌信息可以在通知用户后收回该帐号，以免造成资源浪费，由此造成的不
           利后果由用户自行承担。
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">五、用户隐私和信息保护</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.05s">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">五、用户隐私和信息保护</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           1、用户个人信息包括：<br>
           1）用户自行提供的用户个人信息，包括但不限于注册“琴伴”网页版用户及设置用户信息时填写的手机号码、微信帐号、微博帐号、
           电子邮件地址等，以及使用服务时提供的共享信息；<br>
@@ -106,8 +106,8 @@
             除上述事项外，如未取得用户事先同意，智凌信息不会将用户隐私信息使用于任何其他用途。
           </em>
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.25s">六、内容规范</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.3s">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">六、内容规范</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           1、本条所述内容是指用户使用“琴伴”网页版服务过程中所制作、上传、复制、发布、传播的任何内容，包括但不限于帐号名称、头像、
           个人或机构简介等注册信息及认证资料，或文字、语音、图片、视频、图文等发送、回复或自动回复消息和相关链接页面，以及其它使
           用“琴伴”帐号或服务所产生的内容。<br><br>
@@ -135,8 +135,8 @@
           5、若用户传送内容存在上述违法或不良信息的，智凌信息有权采取通知限期改正、暂停使用等措施。对于冒用关联机构或社会名人登录、使
           用、填写帐号名称、头像、个人或机构简介的，智凌信息有权取消该帐号在“琴伴”网页服务上的使用权限，并向政府主管部门进行报告。
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s">七、使用规则</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.55s">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">七、使用规则</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           1、“琴伴”网页服务由智凌信息开发，受中华人民共和国版权法及国际版权条约和其它知识产权法及条约的保护。用户对“琴伴”网页服务的
           使用必须遵守所有适用的地方法律、国家法律和国际法律。对于违法违规使用而引起的一切后果，由用户负全部责任。<br><br>
           2、用户不得利用“琴伴”网页版帐号或服务进行如下行为：<br>
@@ -168,16 +168,16 @@
           规定外，用户应自行对依该广告信息进行的交易负责。对用户因依该广告信息进行的交易或前述广告商提供的内容而遭受的损失或损害，智凌
           信息不承担任何责任。
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">八、数据储存</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="550ms">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">八、数据储存</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           1、智凌信息对“琴伴”网页版服务将尽力维护其安全性及方便性，但智凌信息不对用户在“琴伴”网页版服务中相关数据的删除或储存失败负责。<br><br>
           2、智凌信息可以根据实际情况自行决定用户在“琴伴”网页版服务中数据的最长储存期限，并在服务器上为其分配数据最大存储空间等。用户
           可根据自己的需要自行备份“琴伴”网页版服务中的相关数据。<br><br>
           3、如用户停止使用“琴伴”网页版服务，或者“琴伴”网页版服务终止，智凌信息可以从服务器上永久地删除用户的数据。“琴伴”网页版服务停止、
           终止后，智凌信息没有义务向用户返还任何数据。
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.75s">九、风险承担</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">九、风险承担</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           1、用户理解并同意，“琴伴”网页版服务仅为用户提供信息获取、传送和分享的平台，用户必须为自己注册帐号下的一切行为负责，包括用户所
           传送的任何内容以及由此产生的任何后果。用户应对“琴伴”网页版服务中的内容自行加以判断，并承担因使用内容而引起的所有风险，包括因对
           内容的正确性、完整性或实用性的依赖而产生的风险。智凌信息无法且不会对因用户行为而导致的任何损失或损害承担责任。<br><br>
@@ -186,8 +186,8 @@
           2、用户理解并同意，因业务发展需要，智凌信息保留单方面对“琴伴”网页版服务的全部或部分服务内容变更、暂停、终止或撤销的权利，用户
           需承担此风险。
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">十、不可抗力及其它免责事由</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.05s">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">十、不可抗力及其它免责事由</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           1、用户理解并确认，在使用“琴伴”网页版服务的过程中，可能会遇到不可抗力等风险因素，使“琴伴”网页版服务发生中断。不可抗力是指不能
           预见、不能克服并不能避免且对一方或双方造成重大影响的客观事件，包括但不限于自然灾害如洪水、地震、瘟疫流行和风暴等以及社会事件如
           战争、动乱、政府行为等。出现上述情况时，智凌信息将努力在第一时间与相关单位配合，及时进行修复，但是由此给用户或第三方造成的损失，
@@ -212,13 +212,13 @@
           利润损失，承担责任（即使智凌信息已被告知该等损失的可能性亦然）。尽管本协议中可能含有相悖的规定，智凌信息对用户承担的全部责任，无
           论因何原因或何种行为方式，始终不超过用户因使用智凌信息提供的服务而支付给智凌信息的费用（如有）。
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.25s">十一、禁止服务的商业化</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.3s">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">十一、禁止服务的商业化</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           用户承诺，非经智凌信息同意，用户不能利用“琴伴”网页版服务进行销售或其它商业用途。如用户确有需要将“琴伴”网页版服务用于商业用途，
           应书面通知智凌信息并获得其明确授权。
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s">十二、知识产权声明</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.55s">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">十二、知识产权声明</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           1、“琴伴”网页版服务提供的内容包括但不限于：视频、音频、图片、文字、列表及其组合、界面设计、版面框架、图标、“琴伴”商标等。除
           涉及第三方授权的软件、技术及内容由授权方享有、以及涉及广告的知识产权由相应广告商享有外，所有这些内容均属于智凌信息，并受中华
           人民共和国著作权法、商标法、专利法、反不正当竞争法和相应的国际条约以及其它知识产权法律法规的保护。所以，用户只能在智凌信息授
@@ -245,16 +245,16 @@
           传播、复制、修改、汇编、改编、再许可、翻译、创建衍生作品、出版、表演及展示此等内容。<br><br>
           7、用户不得利用“琴伴”网页版服务进行其它侵害他人知识产权或者其它合法利益的行为。
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">十三、法律责任</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="550ms">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">十三、法律责任</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           1、用户理解并同意，智凌信息有权依合理判断并对违反有关法律法规或本协议规定的行为进行处罚（包括暂停或终止对用户提供部分或全部
           服务，冻结、取消用户的帐号的使用权限等措施），对违法违规的任何用户采取适当的法律行动，并依据法律法规保存有关信息向有关部门
           报告等，用户应承担由此而产生的一切法律责任。<br><br>
           2、用户理解并同意，因用户违反本协议约定导致或产生的任何第三方主张的任何索赔、要求、处罚或损失（包括合理的律师费等），用户应
           当向智凌信息与合作公司、关联公司进行等额赔偿，并使之免受损害。
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.75s">十四、法律适用</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.8s">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">十四、法律适用</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           <em>
             1、本协议的效力、解释及纠纷的解决，适用于中华人民共和国法律，并且排除一切冲突法规定的适用。<br><br>
             2、若用户和智凌信息之间发生任何纠纷或争议，首先应友好协商解决，协商不成的，用户和智凌信息一致同意将纠纷或争议提交智凌信息
@@ -262,8 +262,8 @@
             3、本协议的任何条款无论因何种原因无效或不具可执行性，其余条款仍有效，对双方具有约束力。
           </em>
         </p>
-        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">十五、其它</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.05s">
+        <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">十五、其它</h3>
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
           1、“琴伴”网页版服务中的部分曲谱以及几乎全部课程资源数据（包括但不限于音频、视频、文字、图片等）为用户自行上传，上传者对所上
           传的内容自行承担责任。如第三方主张上传的内容违反法律法规规定或侵犯第三方权益的，可通过本协议文末列明的客服邮箱向智凌信息提供
           以下文件或信息。智凌信息会在收到上述文件或信息后经判断决定是否对涉嫌侵权的内容或链接进行处理：<br>
