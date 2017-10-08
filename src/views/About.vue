@@ -68,7 +68,7 @@
             </div>
           </div>
           <div class="i-about__section2-map" :class="{ 'is-fullscreen': fullscreen }">
-            <div id="map" style="width: 100%; height: 100%"></div>
+            <div id="map"></div>
           </div>
         </div>
       </div>
@@ -97,17 +97,13 @@
         let _this = this
         Map().then(BMap => {
           let map = new BMap.Map('map') // 创建Map实例
-          map.disableDragging()
-          map.disableDoubleClickZoom()
           map.centerAndZoom(new BMap.Point(121.609709, 31.182514), 15)
           map.addControl(new BMap.MapTypeControl())
           map.setCurrentCity('上海')
           map.enableScrollWheelZoom(false)
           let marker = new BMap.Marker(new BMap.Point(121.609709, 31.182514))
           let label = new BMap.Label('上海智凌信息技术有限公司', {offset: new BMap.Size(20, -10)})
-          label.setStyle({
-            border: 'none'
-          })
+          label.setStyle({ border: 'none' })
           marker.setLabel(label)
           map.addOverlay(marker)
           map.addTileLayer(new BMap.PanoramaCoverageLayer())
