@@ -27,10 +27,10 @@
           服务<span class="iconfont icon-arrowDown"></span>
         </div>
         <div class="i-footer__pane" :class="{ 'is-active': activeIndex === 3 }">
-          <router-link to="/" class="i-footer__item">使用帮助</router-link>
-          <router-link to="/" class="i-footer__item">用户协议</router-link>
+          <router-link to="/help" class="i-footer__item">使用帮助</router-link>
+          <router-link to="/agreement" class="i-footer__item">用户协议</router-link>
           <router-link to="/privacy" class="i-footer__item">隐私条款</router-link>
-          <router-link to="/" class="i-footer__item">联系我们</router-link>
+          <router-link to="/about" class="i-footer__item">联系我们</router-link>
         </div>
       </i-col>
     </i-row>

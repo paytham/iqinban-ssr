@@ -56,7 +56,7 @@ if (process.env.NODE_ENV === 'production') {
           handler: 'networkFirst'
         },
         {
-          urlPattern: /\/(sparring|system|corp|privacy|about|help)/,
+          urlPattern: /\/(sparring|system|corp|privacy|about|help|agreement)/,
           handler: 'networkFirst'
         }
       ]

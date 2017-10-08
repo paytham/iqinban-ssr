@@ -99,6 +99,9 @@ $main-width-mobile: 375px;
   @media (min-width: 1200px) {
     max-width: 1140px;
   }
+  @media (min-width: 1920px) {
+    max-width: pxToVw(1140px);
+  }
   margin: 0 auto;
 }
 .container-fluid {

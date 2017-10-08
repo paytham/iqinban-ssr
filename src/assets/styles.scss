@@ -927,13 +927,24 @@ $sparring-section4-a-background: #94a6be;
     }
     &-text {
       float: left;
+      display: table-cell;
+      vertical-align: middle;
       @media (min-width: 1000px) {
         width: pxToVw(372px);
         margin: 0 pxToVw(108px) 0 pxToVw(48px);
       }
       @media (max-width: 999px) {
         width: pxToVwMobile(150px);
-        margin-left: pxToVwMobile(35px);
+        margin-left: pxToVwMobile(25px);
+      }
+      > h2 {
+        white-space: nowrap;
+        @media (min-width: 1000px) {
+          padding-top: pxToVw(26px);
+        }
+        @media (max-width: 999px) {
+          padding-top: pxToVwMobile(18px);
+        }
       }
       > a {
         display: block;
@@ -1091,7 +1102,9 @@ $system-section6-background: #c5cfdc;
       }
     }
     &-title {
+      @extend .clearfix;
       @media (min-width: 1000px) {
+        text-align: center;
         padding: 0 pxToVw(20px) 0 pxToVw(9px);
       }
       @media (max-width: 999px) {
@@ -1099,21 +1112,27 @@ $system-section6-background: #c5cfdc;
         padding: 0 pxToVwMobile(16px) 0 0;
       }
       > img {
-        float: left;
+        display: block;
+        margin: 0 auto;
         @media (min-width: 1000px) {
           width: pxToVw(90px);
           height: pxToVw(90px);
-          margin-right: pxToVw(25px);
+          margin-bottom: pxToVw(21px);
         }
         @media (max-width: 999px) {
           width: pxToVwMobile(55px);
           height: pxToVwMobile(55px);
-          margin-right: pxToVwMobile(16px);
+          float: left;
+          margin-right: pxToVwMobile(10px);
         }
       }
       > p {
+        white-space: nowrap;
         @media (min-width: 1000px) {
           line-height: pxToVw(45px);
+        }
+        @media (max-width: 999px) {
+          line-height: pxToVwMobile(55px);
         }
       }
     }
@@ -1261,18 +1280,29 @@ $system-section6-background: #c5cfdc;
     &-text {
       text-align: center;
       @media (min-width: 1000px) {
-        width: pxToVw(264 * 4px);
+        width: pxToVw(1100px);
         margin: 0 auto;
       }
       > p.p1 {
+        text-align: left;
         @media (min-width: 1000px) {
-          width: pxToVw(680px);
-          margin: pxToVw(45px) auto pxToVw(129px);
+          width: pxToVw(1100px);
+          margin: pxToVw(45px) auto 0;
+          text-indent: pxToVw(44px);
         }
         @media (max-width: 999px) {
           margin: 0 auto;
-          width: pxToVwMobile(173px);
+          width: pxToVwMobile(290px);
           padding-top: pxToVwMobile(47px);
+          text-indent: pxToVwMobile(32px);
+        }
+        & + p.p1 {
+          @media (min-width: 1000px) {
+            margin: 0 auto pxToVw(129px);
+          }
+          @media (max-width: 999px) {
+            padding-top: 0;
+          }
         }
       }
       > h1 {
@@ -1303,6 +1333,7 @@ $system-section6-background: #c5cfdc;
       @media (max-width: 999px) {
         margin-right: pxToVwMobile(20px);
         margin-bottom: pxToVwMobile(20px);
+        text-align: left;
       }
       > img {
         @media (min-width: 1000px) {
@@ -1319,9 +1350,11 @@ $system-section6-background: #c5cfdc;
         }
       }
       > p.p1 {
+        text-indent: 0;
         @media (max-width: 999px) {
           right: 0;
           top: 15%;
+          white-space: nowrap;
           //transform: translate3d(0, -50%, 0);
           position: absolute;
           left: pxToVwMobile(72px);
@@ -1333,7 +1366,7 @@ $system-section6-background: #c5cfdc;
       position: relative;
       &.hasmargrin {
         @media (max-width: 999px) {
-          padding-left: pxToVwMobile(24px);
+          padding-left: pxToVwMobile(20px);
         }
       }
       .grid-cell {
@@ -1346,11 +1379,25 @@ $system-section6-background: #c5cfdc;
       @media (min-width: 1000px) {
         width: pxToVw(580px);
         height: pxToVw(446px);
+        border-radius: pxToVw(15px);
+        overflow: hidden;
       }
       @media (max-width: 999px) {
         width: pxToVwMobile(290px);
         height: pxToVwMobile(223px);
         margin: pxToVwMobile(27px) auto pxToVwMobile(35px);
+        border-radius: pxToVwMobile(5px);
+        overflow: hidden;
+      }
+      &.is-fullscreen {
+        @media (max-width: 999px) {
+          position: fixed;
+          z-index: 1000;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+        }
       }
     }
     &-contact {
@@ -1376,7 +1423,8 @@ $system-section6-background: #c5cfdc;
         margin-bottom: pxToVw(26px);
       }
       @media (max-width: 999px) {
-        margin-bottom: pxToVwMobile(36px);
+        width: pxToVwMobile(290px);
+        margin: 0 auto pxToVwMobile(36px);
       }
       &.is-last {
         margin-bottom: 0;
@@ -1572,7 +1620,7 @@ $corp__section1-form-border-radius: 12px;
       }
       @media (max-width: 999px) {
         margin: 0 auto pxToVwMobile(57px);
-        width: pxToVwMobile(173px);
+        width: pxToVwMobile(273px);
       }
     }
     .i-form {
@@ -1604,18 +1652,19 @@ $corp__section1-form-border-radius: 12px;
         &-inner {
           display: block;
           border: 1px solid #e4e8ee;
-          border-radius: pxToVw(4px);
           padding: 0;
           @media (min-width: 1000px) {
             padding-left: pxToVw(10px);
             width: pxToVw(350px);
             height: pxToVw(40px);
             line-height: pxToVw(40px);
+            border-radius: pxToVw(4px);
           }
           @media (max-width: 999px) {
             padding-left: pxToVwMobile(10px);
             width: pxToVwMobile(270px);
             height: pxToVwMobile(40px);
+            border-radius: pxToVwMobile(4px);
             line-height: pxToVwMobile(40px);
           }
         }
@@ -1638,6 +1687,14 @@ $corp__section1-form-border-radius: 12px;
           height: pxToVwMobile(42px);
           line-height: pxToVwMobile(42px);
           border-radius: pxToVwMobile(42px);
+        }
+      }
+      p.p3 {
+        @media (min-width: 1000px) {
+          width: pxToVw(350px);
+        }
+        @media (max-width: 999px) {
+          width: pxToVwMobile(270px);
         }
       }
     }
@@ -1676,6 +1733,10 @@ $corp__section1-form-border-radius: 12px;
         }
         @media (max-width: 999px) {
           margin-bottom: pxToVwMobile(30px);
+        }
+        em {
+          font-style: normal;
+          text-decoration: underline;
         }
       }
       > h3 {
