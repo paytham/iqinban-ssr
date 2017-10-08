@@ -1,0 +1,9 @@
+{
+  "apps" : [{
+    "name"       : "iqinban-ssr",
+    "script"     : "./server.js",
+    "watch"      : true,
+    "instances"  : 4,
+    "exec_mode"  : "cluster"
+  }]
+}
