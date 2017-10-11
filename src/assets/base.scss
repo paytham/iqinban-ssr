@@ -199,6 +199,16 @@ $ip: 'http://www.iqinban.com/website';
       font-size: 32px;
     }
   }
+  @media (max-width: 999px) {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    right: pxToVwMobile(10px);
+    bottom: pxToVwMobile(100px);
+    > i {
+      font-size: 24px;
+    }
+  }
 }
 
 // color
@@ -211,10 +221,10 @@ $color-dark-peach: #e57453;
 // font
 @font-face {
   font-family: 'iconfont';  /* project id 437769 */
-  src: url('//at.alicdn.com/t/font_437769_juca5ytalkqk6gvi.eot');
-  src: url('//at.alicdn.com/t/font_437769_juca5ytalkqk6gvi.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_437769_juca5ytalkqk6gvi.woff') format('woff'),
-  url('//at.alicdn.com/t/font_437769_juca5ytalkqk6gvi.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_437769_juca5ytalkqk6gvi.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_437769_zaimoapwlot7qfr.eot');
+  src: url('//at.alicdn.com/t/font_437769_zaimoapwlot7qfr.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_437769_zaimoapwlot7qfr.woff') format('woff'),
+  url('//at.alicdn.com/t/font_437769_zaimoapwlot7qfr.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_437769_zaimoapwlot7qfr.svg#iconfont') format('svg');
 }
-@import url("//at.alicdn.com/t/font_437769_juca5ytalkqk6gvi.css");
+@import url("//at.alicdn.com/t/font_437769_zaimoapwlot7qfr.css");
