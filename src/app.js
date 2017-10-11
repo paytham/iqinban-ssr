@@ -5,14 +5,6 @@ import { createRouter } from './router/index'
 import { sync } from 'vuex-router-sync'
 import titleMixin from './util/title'
 import * as filters from './util/filters'
-import VueLazyLoad from 'vue-lazyload'
-
-Vue.use(VueLazyLoad, {
-  preLoad: 1.3,
-  error: '',
-  loading: '',
-  attempt: 1
-})
 
 // mixin for handling title
 Vue.mixin(titleMixin)

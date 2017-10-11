@@ -19,13 +19,13 @@ export function createRouter () {
     scrollBehavior: () => ({ y: 0 }),
     routes: [
       { path: '/', component: Home, meta: { isOpaque: false } },
-      { path: '/sparring', component: Sparring, meta: { isOpaque: true } },
-      { path: '/system', component: System, meta: { isOpaque: true } },
-      { path: '/about', component: About, meta: { isOpaque: false } },
+      { path: '/sparring', component: Sparring, meta: { isOpaque: true, isGradient: true } },
+      { path: '/system', component: System, meta: { isOpaque: false } },
+      { path: '/about', component: About, meta: { isOpaque: true } },
       { path: '/help', component: Help, meta: { isOpaque: false } },
-      { path: '/corp', component: Corp, meta: { isOpaque: false } },
-      { path: '/privacy', component: Privacy, meta: { isOpaque: false } },
-      { path: '/agreement', component: Agreement, meta: { isOpaque: false } }
+      { path: '/corp', component: Corp, meta: { isOpaque: false, isOpaqueTrans: true } },
+      { path: '/privacy', component: Privacy, meta: { isOpaque: false, isOpaqueTrans: true } },
+      { path: '/agreement', component: Agreement, meta: { isOpaque: false, isOpaqueTrans: true } }
     ]
   })
 }

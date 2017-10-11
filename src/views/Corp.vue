@@ -2,7 +2,7 @@
 <template>
   <main class="i-corp">
     <section class="i-section i-corp__section1">
-      <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">商务合作</h1>
+      <h2 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">请填写以下信息，我们会尽快与您取得联系。</h2>
       <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
         公司愿与钢琴制造、销售、培训等业界同仁携手合作，迎接消费升级背景下的时代发展机会，一起开拓钢琴教育、
         娱乐和租售等相关市场。请填写以下信息，我们会尽快与您取得联系。
@@ -41,7 +41,7 @@
         <div class="i-form__item wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.75s">
           <p class="p3">我们非常重视您的隐私，只会将以上信息用于收集时所说明的目的或符合法律规定的其他一致目的。</p>
         </div>
-        <button class="i-form__button b wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s">提交</button>
+        <button class="i-form__button b wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s"></button>
       </form>
     </section>
   </main>

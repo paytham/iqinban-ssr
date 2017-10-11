@@ -9,7 +9,7 @@ Vue.use(Vuex)
 export function createStore () {
   return new Vuex.Store({
     state: {
-      imgUrl: 'https://paytham.github.io/iqinban'
+      imgUrl: 'http://www.iqinban.com/website'
     },
     actions,
     mutations,

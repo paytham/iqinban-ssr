@@ -1,8 +1,7 @@
 <!-- 帮助与支持 -->
 <template>
   <main class="i-help">
-    <section class="i-section i-help__section1"
-             v-lazy:background-image="imgUrl + '/section1.jpeg'">
+    <section class="i-section i-help__section1">
       <div class="i-section__article i-help__section1-article">
         <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">错漏快慢，一目了然</h1>
         <p class="p1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">全国统一客服热线：400-800-888</p>
@@ -19,7 +18,8 @@
       <i-row class="i-help__section2-list">
         <i-col :span="4" v-for="i in 6" :key="i">
           <div class="i-help__section2-item">
-            <img alt="icon" v-lazy="imgUrl + '/logo.png'" class="wow fadeInUp" data-wow-duration="2s">
+            <img alt="icon" class="wow fadeInUp" data-wow-duration="2s"
+                 :src="imgUrl + '/logo.png'" :srcset="imgUrl + '/logo.png 1x, ' + imgUrl + '/logo.png 2x'">
             <p class="p1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">安装</p>
             <P class="p1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
               智能纠错系统采用基于机器学习的音频和图像识别算法，精确检测，实时反馈

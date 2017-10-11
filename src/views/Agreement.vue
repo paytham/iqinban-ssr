@@ -1,17 +1,16 @@
 <!-- 隐私条款 -->
 <template>
-  <main class="i-privacy">
-    <section class="i-section i-privacy__section1"
-             v-lazy:background-image="imgUrl + '/section2.jpeg'">
-      <div class="i-section__article i-privacy__section1-article">
-        <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">用户协议</h1>
+  <main class="i-agreement">
+    <section class="i-section i-agreement__section1">
+      <div class="i-agreement__section1-article">
+        <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">琴伴网页版用户协议</h1>
         <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">最后更新：2017.10.08</p>
       </div>
     </section>
-    <section class="i-section i-privacy__section2">
-      <div class="i-privacy__section2-container">
+    <section class="i-section i-agreement__section2">
+      <div class="i-agreement__section2-container">
         <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">特别提示</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms" style="color: #0b1f35">
           欢迎使用上海智凌信息技术有限公司（以下简称“智凌信息”）提供的“琴伴”网页版服务。请您（个人或单一实体，以下简称“用户”）
           在使用该应用或服务之前，仔细阅读以下全部内容（特别是免除或者限制智凌信息责任的免责条款以及对用户的权利限制等内容），
           并确保您充分理解本协议中各条款。请您审慎阅读并在自主、充分考虑风险后选择接受或不接受本协议。未成年人则应在法定监护人
@@ -240,9 +239,14 @@
           5、智凌信息在“琴伴”网页版服务中所涉及的图形、文字或其组成，以及其它智凌信息标志及产品、服务名称（以下统称“智凌信息标识”），
           其著作权或商标权归智凌信息所有。未经智凌信息事先书面同意，用户不得将智凌信息标识以任何方式展示或使用或作其它处理，也不得向他
           人表明用户有权展示、使用、或其它有权处理智凌信息标识的行为。<br><br>
-          6、智凌信息尊重知识产权并注重保护用户享有的各项权利。在“琴伴”网页版服务中，用户可能需要通过发表评论等各种方式向智凌信息提供
-          内容。在此情况下，用户仍然享有此等内容的完整知识产权。用户在提供内容时将授予智凌信息一项全球性的免费许可，允许智凌信息使用、
-          传播、复制、修改、汇编、改编、再许可、翻译、创建衍生作品、出版、表演及展示此等内容。<br><br>
+          6、智凌信息尊重知识产权并注重保护用户享有的各项权利。在“琴伴”网页版服务中，用户通过各种方式向智凌信息提供的全部原创内容（包
+          括但不限于上传的曲谱、课程资源、发表的文章、评论等），著作权均归用户本人所有，用户可授权第三方以任何方式使用，不需要得到智凌
+          信息的同意。同时，用户将其向智凌信息提供的上述内容，授予智凌信息一项全球性的、免费的、不可撤销的、非独家使用许可，允许智凌信
+          息使用、传播、复制、修改、汇编、改编、再许可、翻译、创建衍生作品、出版、表演及展示该内容。第三方若出于非商业目的，将该内容转
+          载在“琴伴”之外的地方，应当在转载的显著位置注明原作者姓名（或原作者在“琴伴”上使用的帐号名称），给出原始链接，注明【发表于“琴
+          伴”】，并不得对该内容进行修改演绎。若需要对该内容进行修改，或用于商业目的，第三方应当联系原作者获得单独授权，按照原作者规定
+          的方式使用该内容。此外，智凌信息为用户提供【保留所有权利，禁止转载】的选项，除非获得原作者的单独授权，任何第三方不得转载标注
+          了【禁止转载】的内容，否则均视为侵权。<br><br>
           7、用户不得利用“琴伴”网页版服务进行其它侵害他人知识产权或者其它合法利益的行为。
         </p>
         <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">十三、法律责任</h3>
@@ -263,7 +267,7 @@
           </em>
         </p>
         <h3 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="300ms">十五、其它</h3>
-        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms">
+        <p class="p2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="350ms" style="margin-bottom: 0">
           1、“琴伴”网页版服务中的部分曲谱以及几乎全部课程资源数据（包括但不限于音频、视频、文字、图片等）为用户自行上传，上传者对所上
           传的内容自行承担责任。如第三方主张上传的内容违反法律法规规定或侵犯第三方权益的，可通过本协议文末列明的客服邮箱向智凌信息提供
           以下文件或信息。智凌信息会在收到上述文件或信息后经判断决定是否对涉嫌侵权的内容或链接进行处理：<br>
@@ -274,7 +278,7 @@
           2、除非另有证明，智凌信息储存在其服务器上的数据是用户使用“琴伴”网页版服务的唯一有效证据。<br><br>
           3、本协议自发布之日起实施，并构成用户和智凌信息之间的共识。智凌信息不行使、未及时行使或者未充分行使本协议或者按照法律规定所
           享有的权利，不应被视为放弃该权利，也不影响智凌信息在将来行使该权利。<br><br>
-          4、如果用户对本协议内容有任何疑问，请发送邮件至智凌信息的客服邮箱：（service@iqinban.com）。
+          4、如果用户对本协议内容有任何疑问，请发送邮件至智凌信息的客服邮箱：（<a href="mailto:service@iqinban.com">service@iqinban.com</a>）。
         </p>
       </div>
     </section>

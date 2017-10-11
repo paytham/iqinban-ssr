@@ -49,8 +49,49 @@ $main-width-mobile: 375px;
   margin: 0 auto;
 }
 
+// base url
+$ip: 'http://www.iqinban.com/website';
+
+//pic
+@mixin pic($num) {
+  @media (min-width: 1000px) {
+    background-image: url($ip + '/pc/system/pic' + $num + '.png');
+    @media (-webkit-min-device-pixel-ratio: 2) {
+      background-image: url($ip + '/pc/system/pic' + $num + '@2x.png');
+    }
+  }
+  @media (max-width: 999px) {
+    background-image: url($ip + '/mobile/system/pic' + $num + '.png');
+    @media (-webkit-min-device-pixel-ratio: 2) {
+      background-image: url($ip + '/mobile/system/pic' + $num + '@2x.png');
+    }
+    @media (-webkit-min-device-pixel-ratio: 3) {
+      background-image: url($ip + '/mobile/system/pic' + $num + '@3x.png');
+    }
+  }
+}
+
+// logo
+@mixin logo ($name) {
+  @media (min-width: 1000px) {
+    background-image: url($ip + '/pc/system/' + $name + '.png');
+    @media (-webkit-min-device-pixel-ratio: 2) {
+      background-image: url($ip + '/pc/system/' + $name + '@2x.png');
+    }
+  }
+  @media (max-width: 999px) {
+    background-image: url($ip + '/mobile/system/' + $name + '.png');
+    @media (-webkit-min-device-pixel-ratio: 2) {
+      background-image: url($ip + '/mobile/system/' + $name + '@2x.png');
+    }
+    @media (-webkit-min-device-pixel-ratio: 3) {
+      background-image: url($ip + '/mobile/system/' + $name + '@3x.png');
+    }
+  }
+}
+
 // 1px
-@mixin i-1px($color, $type:'all', $radius: 0, $width: 1px) {
+@mixin i-1px($color, $type:'all', $radius: '0px', $width: 1px) {
   content: " ";
   position: absolute;
   left: 0;
@@ -124,6 +165,13 @@ $main-width-mobile: 375px;
 // wow
 .wow {
   visibility: hidden;
+}
+
+// ipad
+.is-ipad {
+  * {
+    background-attachment: scroll !important;
+  }
 }
 
 // color

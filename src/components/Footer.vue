@@ -1,16 +1,16 @@
 <!-- Footer -->
 <template>
-  <footer class="i-footer">
+  <footer class="i-footer" :class="{ 'is-gradient': $route.meta.isGradient }">
     <i-row class="container">
       <i-col :span="2">
         <div class="i-footer__title" :class="{ 'is-active': activeIndex === 1, 'noborder': activeIndex === 1 }" @click="expand(1)">
           产品<span class="iconfont icon-arrowDown"></span>
         </div>
         <div class="i-footer__pane" :class="{ 'is-active': activeIndex === 1 }">
-          <router-link to="/" class="i-footer__item">小Q盒子</router-link>
-          <router-link to="/" class="i-footer__item">琴伴学生端</router-link>
+          <a href="https://weidian.com/?userid=273581281&wfr=qr&isQRscan=1" class="i-footer__item">小Q盒子</a>
+          <a href="https://weidian.com/?userid=273581281&wfr=qr&isQRscan=1" class="i-footer__item">琴伴学生端</a>
           <router-link to="/" class="i-footer__item">琴伴教师端</router-link>
-          <router-link to="/" class="i-footer__item">机构端</router-link>
+          <a href="http://www.iqinban.com/org_site" class="i-footer__item">机构端</a>
         </div>
       </i-col>
       <i-col :span="2">
@@ -23,11 +23,11 @@
         </div>
       </i-col>
       <i-col :span="2">
-        <div class="i-footer__title noborder" :class="{ 'is-active': activeIndex === 3 }" @click="expand(3)">
+        <div class="i-footer__title" :class="{ 'is-active': activeIndex === 3, 'noborder': activeIndex === 3 }" @click="expand(3)">
           服务<span class="iconfont icon-arrowDown"></span>
         </div>
         <div class="i-footer__pane" :class="{ 'is-active': activeIndex === 3 }">
-          <router-link to="/help" class="i-footer__item">使用帮助</router-link>
+          <!--<router-link to="/help" class="i-footer__item">使用帮助</router-link>-->
           <router-link to="/agreement" class="i-footer__item">用户协议</router-link>
           <router-link to="/privacy" class="i-footer__item">隐私条款</router-link>
           <router-link to="/about" class="i-footer__item">联系我们</router-link>

@@ -9,6 +9,8 @@ And if this project was worked fine for you, please starred it.<br>
 **A detailed Vue SSR guide can be found [here](https://ssr.vuejs.org).**
 
 ## ChangeLog
+- v1.2.0-20171011
+  - Updated a lot of things
 - v1.1.0-20171003
   - Emergency fixes two bugs that can cause the server to fall into an unrecoverable state
 - v1.0.2-20171003
