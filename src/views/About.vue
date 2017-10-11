@@ -78,7 +78,7 @@
               <p class="p1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="650ms">上海市浦东新区环科路515号绿地智创商务中心1号楼401</p>
             </div>
           </div>
-          <div class="i-about__section4-map" :class="{ 'is-fullscreen': fullscreen }">
+          <div class="i-about__section4-map">
             <div id="map"></div>
           </div>
         </div>
@@ -90,7 +90,7 @@
 <script>
   import IRow from '../components/Row.vue'
   import ICol from '../components/Col.vue'
-  import { Map } from '../client/map'
+  import { Map, drawMap } from '../client/map'
   import { wowMixin } from '../client/wow'
 
   export default {
@@ -103,28 +103,6 @@
     title () {
       return '琴伴 | 关于我们'
     },
-    methods: {
-      showMap () {
-        let _this = this
-        Map().then(BMap => {
-          let map = new BMap.Map('map') // 创建Map实例
-          map.centerAndZoom(new BMap.Point(121.609709, 31.182514), 15)
-          map.addControl(new BMap.MapTypeControl())
-          map.setCurrentCity('上海')
-          map.enableScrollWheelZoom(false)
-          let marker = new BMap.Marker(new BMap.Point(121.609709, 31.182514))
-          let label = new BMap.Label('上海智凌信息技术有限公司', {offset: new BMap.Size(20, -10)})
-          label.setStyle({ border: 'none' })
-          marker.setLabel(label)
-          map.addOverlay(marker)
-          map.addTileLayer(new BMap.PanoramaCoverageLayer())
-          let stCtrl = new BMap.PanoramaControl()
-          stCtrl.setAnchor(BMAP_ANCHOR_TOP_LEFT)
-          stCtrl.setOffset(new BMap.Size(0, 0))
-          map.addControl(stCtrl)
-        })
-      }
-    },
     computed: {
       imgUrl () {
         return this.$store.state.imgUrl
@@ -132,13 +110,8 @@
     },
     mounted () {
       this.$nextTick(_ => {
-        this.showMap()
+        Map().then(BMap => drawMap(BMap))
       })
-    },
-    data () {
-      return {
-        fullscreen: false
-      }
     }
   }
 </script>

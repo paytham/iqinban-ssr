@@ -1,21 +1,21 @@
 const headroomMixin = {
   mounted () {
     let _this = this
-    function scroll( fn ) {
+    function scroll (fn) {
       let beforeScrollTop = document.documentElement.scrollTop || document.body.scrollTop
-      fn = fn || function() {}
+      fn = fn || function () {}
       if (beforeScrollTop >= 80) {
         _this.headroom = true
       }
-      window.addEventListener("scroll", function() {
+      window.addEventListener('scroll', function () {
         let afterScrollTop = document.documentElement.scrollTop || document.body.scrollTop
         let delta = afterScrollTop - beforeScrollTop
-        if(delta === 0) return false
-        fn(delta > 0 ? "down" : "up", afterScrollTop)
+        if (delta === 0) return false
+        fn(delta > 0 ? 'down' : 'up', afterScrollTop)
         beforeScrollTop = afterScrollTop
       }, false)
     }
-    scroll(function(direction, delta) {
+    scroll(function (direction, delta) {
       if (delta <= 10 && direction === 'up') {
         _this.headroom = false
       }

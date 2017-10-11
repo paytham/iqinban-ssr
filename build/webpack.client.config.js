@@ -1,9 +1,24 @@
-const glob = require('glob')
+const path = require('path')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const base = require('./webpack.base.config')
 const SWPrecachePlugin = require('sw-precache-webpack-plugin')
 const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
+
+function resolve (dir) {
+  return path.join(__dirname, '..', dir)
+}
+
+// eslint
+const eslintRule = {
+  test: /\.(js|vue)$/,
+  loader: 'eslint-loader',
+  enforce: 'pre',
+  include: [resolve('src')],
+  options: {
+    formatter: require('eslint-friendly-formatter')
+  }
+}
 
 const config = merge(base, {
   entry: {
@@ -62,6 +77,8 @@ if (process.env.NODE_ENV === 'production') {
       ]
     })
   )
+} else {
+  config.module.rules.unshift(eslintRule)
 }
 
 module.exports = config

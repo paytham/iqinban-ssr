@@ -48,4 +48,11 @@
   @import "./assets/normolize";
   @import "./assets/base";
   @import "./assets/styles";
+  /*.fade-enter-active, .fade-leave-active {
+    transition: all .2s ease;
+  }
+  .fade-enter, .fade-leave-active {
+    opacity: 0;
+    transform: translate3d(-5%, 0, 0);
+  }*/
 </style>
