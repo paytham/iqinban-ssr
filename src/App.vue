@@ -1,10 +1,11 @@
 <template>
   <div id="iqinban" :class="cls">
-    <i-header ref="header" :class="{ 'headroom--unpinned': headroom }"></i-header>
+    <i-header ref="header" :class="{ 'headroom--unpinned': headroom }" class="i-jump"></i-header>
     <transition name="fade" mode="out-in">
       <router-view class="viewbox"></router-view>
     </transition>
     <i-footer></i-footer>
+    <a class="backTop" href="javascript:" v-show="showBackTop" @click="scrollTop"><i class="iconfont icon-packup"></i></a>
   </div>
 </template>
 
@@ -12,6 +13,8 @@
   import IHeader from './components/Header.vue'
   import IFooter from './components/Footer.vue'
   import { headroomMixin } from './client/headroom'
+  import { scrollMixin } from './client/wow'
+  import { jump } from './client/scroll'
   import { isIPad } from './client/deviceDetect'
 
   export default {
@@ -20,7 +23,12 @@
       IHeader,
       IFooter
     },
-    mixins: [headroomMixin],
+    mixins: [headroomMixin, scrollMixin],
+    methods: {
+      scrollTop () {
+        jump(0)
+      }
+    },
     mounted () {
       this.$nextTick(_ => {
         if (isIPad() > 0) {

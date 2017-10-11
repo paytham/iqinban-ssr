@@ -19,7 +19,8 @@
               无需自行构建自己的信息化体系，免费注册琴伴网页版就可以将自己的教学资源和教学过程上线，
               轻松实现教学过程管理、教学人事管理、课程资源传播和自身的品牌宣传。
             </p>
-            <a class="b wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms" href="javascript:">了解更多</a>
+            <a class="b wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms"
+               href="javascript:" @click="scrollTo(1)">了解更多</a>
           </div>
         </i-col>
         <i-col :span="4">
@@ -29,7 +30,8 @@
               通过教师端App与机构端配合实现线上、线下教学过程一体化。在提升教学效率和质量的同时，
               还能利用碎片时间通过在线陪练辅导、批改练琴作业等增加收入，或通过发表原创内容打造知名度。
             </p>
-            <a class="b wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms" href="javascript:">了解更多</a>
+            <a class="b wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms"
+               href="javascript:" @click="scrollTo(2)">了解更多</a>
           </div>
         </i-col>
         <i-col :span="4">
@@ -44,7 +46,7 @@
         </i-col>
       </i-row>
     </section>
-    <section class="i-section i-system__section i-system__section3 i-system_l1">
+    <section class="i-jump i-section i-system__section i-system__section3 i-system_l1">
       <div title="pic1" class="wow fadeInLeft img pic1" data-wow-duration="2s"></div>
       <div class="i-section__text i-system__section3-text">
         <h3>
@@ -93,7 +95,7 @@
         </p>
       </div>
     </section>
-    <section class="i-section i-system__section i-system__section4 i-system__section5 i-system_l5">
+    <section class="i-jump i-section i-system__section i-system__section4 i-system__section5 i-system_l5">
       <div class="i-section__text i-system__section3-text">
         <h3>
           <div class="wow fadeInUp img logo5" data-wow-duration="2s" data-wow-delay="250ms"></div>
@@ -134,6 +136,7 @@
   import IRow from '../components/Row.vue'
   import ICol from '../components/Col.vue'
   import { wowMixin } from '../client/wow'
+  import { jump } from '../client/scroll'
 
   export default {
     name: 'System',
@@ -148,6 +151,11 @@
     computed: {
       imgUrl () {
         return this.$store.state.imgUrl
+      }
+    },
+    methods: {
+      scrollTo (index) {
+        jump(index)
       }
     }
   }

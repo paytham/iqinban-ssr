@@ -4,7 +4,7 @@
     <i-row class="container">
       <i-col :span="2">
         <div class="i-footer__title" :class="{ 'is-active': activeIndex === 1, 'noborder': activeIndex === 1 }" @click="expand(1)">
-          产品<span class="iconfont icon-arrowDown"></span>
+          产品<span class="iconfont icon-unfold"></span>
         </div>
         <div class="i-footer__pane" :class="{ 'is-active': activeIndex === 1 }">
           <a href="https://weidian.com/?userid=273581281&wfr=qr&isQRscan=1" class="i-footer__item">小Q盒子</a>
@@ -15,7 +15,7 @@
       </i-col>
       <i-col :span="2">
         <div class="i-footer__title" :class="{ 'is-active': activeIndex === 2, 'noborder': activeIndex === 2 }" @click="expand(2)">
-          关注我们<span class="iconfont icon-arrowDown"></span>
+          关注我们<span class="iconfont icon-unfold"></span>
         </div>
         <div class="i-footer__pane" :class="{ 'is-active': activeIndex === 2 }">
           <router-link to="/" class="i-footer__item">微博</router-link>
@@ -24,7 +24,7 @@
       </i-col>
       <i-col :span="2">
         <div class="i-footer__title" :class="{ 'is-active': activeIndex === 3, 'noborder': activeIndex === 3 }" @click="expand(3)">
-          服务<span class="iconfont icon-arrowDown"></span>
+          服务<span class="iconfont icon-unfold"></span>
         </div>
         <div class="i-footer__pane" :class="{ 'is-active': activeIndex === 3 }">
           <!--<router-link to="/help" class="i-footer__item">使用帮助</router-link>-->

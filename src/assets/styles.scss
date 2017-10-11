@@ -567,6 +567,7 @@ $footer-border-color: #fff;
     > span {
       display: none;
       font-size: pxToVwMobile(16px);
+      margin-top: pxToVwMobile(3px);
       width: pxToVwMobile(24px);
       height: pxToVwMobile(24px);
       line-height: pxToVwMobile(24px);

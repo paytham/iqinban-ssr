@@ -9,7 +9,7 @@
         </p>
         <a class="b b1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms"
            href="https://weidian.com/?userid=273581281&wfr=qr&isQRscan=1"></a>
-        <a class="b b2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms" :href="href"></a>
+        <a class="b b2 wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms" @click="scrollTo(1)" href="javascript:"></a>
       </div>
     </section>
     <section class="i-section i-sparring__section i-sparring__section2">
@@ -58,7 +58,7 @@
         </p>
       </div>
     </section>
-    <section class="i-sparring__section4">
+    <section class="i-sparring__section4 i-jump">
       <div class="i-sparring__section4-app">
         <img alt="logo" class="wow fadeIn" data-wow-duration="2s" :src="imgUrl + '/pc/spar/logo.png'"
              :srcset="imgUrl + '/pc/spar/logo.png 1x, ' + imgUrl + '/pc/spar/logo@2x.png 2x'">
@@ -78,6 +78,7 @@
 <script>
   import { wowMixin } from '../client/wow'
   import { isPc, mobileType } from '../client/deviceDetect'
+  import { jump } from '../client/scroll'
 
   export default {
     name: 'Sparring',
@@ -88,6 +89,11 @@
     computed: {
       imgUrl () {
         return this.$store.state.imgUrl
+      }
+    },
+    methods: {
+      scrollTo (index) {
+        jump(index)
       }
     },
     mounted () {
