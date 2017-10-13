@@ -70,7 +70,7 @@
             <div class="i-about__section4-chr">
               <p class="p1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">手机：</p>
               <p class="p1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="550ms">
-                <a href="tel:13901805176">+86 139-0180-5176</a>
+                <a href="tel:13901805167">+86 139-0180-5167</a>
               </p>
             </div>
             <div class="i-about__section4-chr is-last">

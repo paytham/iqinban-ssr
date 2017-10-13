@@ -13,8 +13,7 @@
       </div>
     </section>
     <section class="i-section i-sparring__section i-sparring__section2">
-      <img alt="pic1" class="wow fadeInLeft" data-wow-duration="2s" data-wow-offset="100"
-           :src="imgUrl + '/pc/spar/pic1.png'" :srcset="imgUrl + '/pc/spar/pic1.png 1x, ' + imgUrl + '/pc/spar/pic1@2x.png 2x'">
+      <div title="pic1" class="img wow fadeInLeft pic1" data-wow-duration="2s" data-wow-offset="100"></div>
       <div class="i-section__text i-sparring__section2-text">
         <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">优质曲库，确保练琴质量</h1>
         <p class="p1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">
@@ -24,8 +23,7 @@
       </div>
     </section>
     <section class="i-section i-sparring__section i-sparring__section3">
-      <img alt="pic1" class="wow fadeInRight" data-wow-duration="2s" :src="imgUrl + '/pc/spar/pic2.png'"
-           :srcset="imgUrl + '/pc/spar/pic2.png 1x, ' + imgUrl + '/pc/spar/pic2@2x.png 2x'">
+      <div title="pic2" class="img wow fadeInRight pic2" data-wow-duration="2s"></div>
       <div class="i-section__text i-sparring__section3-text">
         <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">功能丰富，贴近学员心理</h1>
         <p class="p1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">
@@ -36,8 +34,7 @@
       </div>
     </section>
     <section class="i-section i-sparring__section i-sparring__section2">
-      <img alt="pic1" class="wow fadeInLeft" data-wow-duration="2s" :src="imgUrl + '/pc/spar/pic3.png'"
-           :srcset="imgUrl + '/pc/spar/pic3.png 1x, ' + imgUrl + '/pc/spar/pic3@2x.png 2x'">
+      <div title="pic3" class="img wow fadeInLeft pic3" data-wow-duration="2s"></div>
       <div class="i-section__text i-sparring__section2-text">
         <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">智能纠错，解决疑难杂症</h1>
         <p class="p1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">
@@ -48,8 +45,7 @@
       </div>
     </section>
     <section class="i-section i-sparring__section i-sparring__section3">
-      <img alt="pic1" class="wow fadeInRight" data-wow-duration="2s" :src="imgUrl + '/pc/spar/pic4.png'"
-           :srcset="imgUrl + '/pc/spar/pic4.png 1x, ' + imgUrl + '/pc/spar/pic4@2x.png 2x'">
+      <div title="pic4" class="img wow fadeInRight pic4" data-wow-duration="2s"></div>
       <div class="i-section__text i-sparring__section3-text">
         <h1 class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="250ms">瀑布流跟弹，激发学习兴趣</h1>
         <p class="p1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="500ms">
