@@ -29,10 +29,12 @@ And if this project was worked fine for you, please starred it.<br>
 - Service workers support
 
 ## How to deploy?
-1. You should remove code comments (file: src/entry-client.js, line 56-58)
-1. You should to copy files to the server.<br>
-2. Run "cd" to the server's root directory
-3. Run "pm2 start process.json"
+1. Remove code comments (file: src/entry-client.js, line 56-58)
+2. Run "build" script (package.json)
+3. Copy files to the server.<br>
+4. Run "cd" to the server's root directory
+5. Run "pm2 start process.json --env production" for production<br>
+   Or run "pm2 start process.json" for development
 
 **A detail pm2 guide can be found [here](http://pm2.keymetrics.io/docs/usage/quick-start/).**
 
