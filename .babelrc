@@ -1,8 +1,35 @@
 {
-  "presets": [
-    ["env", { "modules": false }]
-  ],
-  "plugins": [
-    "syntax-dynamic-import"
-  ]
+  "env": {
+    "production": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "browsers": ["last 2 version", "ie 10"]
+          },
+          "modules": false,
+          "debug": false
+        }]
+      ],
+      "plugins": [
+        "transform-runtime",
+        "transform-object-rest-spread",
+        "syntax-dynamic-import"
+      ]
+    },
+    "development": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "chrome": 52
+          },
+          "modules": false,
+          "debug": true
+        }]
+      ],
+      "plugins": [
+        "transform-object-rest-spread",
+        "syntax-dynamic-import"
+      ]
+    }
+  }
 }

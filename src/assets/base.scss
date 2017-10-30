@@ -17,6 +17,15 @@ body {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 
+body.hidden {
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+#iqinban {
+  position: relative;
+}
+
 $main-width: 1920px;
 $main-width-mobile: 375px;
 @function pxToVw($args) {
@@ -50,6 +59,7 @@ $main-width-mobile: 375px;
 }
 
 // base url
+// $ip: 'http://192.168.1.101:8080';
 $ip: 'http://www.iqinban.com/website';
 
 //pic

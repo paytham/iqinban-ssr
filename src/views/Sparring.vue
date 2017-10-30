@@ -72,9 +72,9 @@
 </template>
 
 <script>
-  import { wowMixin } from '../client/wow'
+  import { wowMixin } from '../client/mixins'
   import { isPc, mobileType } from '../client/deviceDetect'
-  import { jump } from '../client/scroll'
+  import { jump } from '../client/anchor'
 
   export default {
     name: 'Sparring',

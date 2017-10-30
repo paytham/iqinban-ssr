@@ -286,7 +286,7 @@
 </template>
 
 <script>
-  import { wowMixin } from '../client/wow'
+  import { wowMixin } from '../client/mixins'
 
   export default {
     name: 'Agreement',

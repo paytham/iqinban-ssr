@@ -6,7 +6,22 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 
 const isProd = process.env.NODE_ENV === 'production'
 
-module.exports = {
+function resolve (dir) {
+  return path.join(__dirname, '..', dir)
+}
+
+// eslint
+const eslintRule = {
+  test: /\.(js|vue)$/,
+  loader: 'eslint-loader',
+  enforce: 'pre',
+  include: [resolve('src')],
+  options: {
+    formatter: require('eslint-friendly-formatter')
+  }
+}
+
+var config = {
   devtool: isProd ? false : '#cheap-module-source-map',
   output: {
     path: path.resolve(__dirname, '../dist'),
@@ -67,3 +82,9 @@ module.exports = {
       new FriendlyErrorsPlugin()
     ]
 }
+
+if (!isProd) {
+  config.module.rules.unshift(eslintRule)
+}
+
+module.exports = config

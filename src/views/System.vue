@@ -135,8 +135,8 @@
 <script>
   import IRow from '../components/Row.vue'
   import ICol from '../components/Col.vue'
-  import { wowMixin } from '../client/wow'
-  import { jump } from '../client/scroll'
+  import { wowMixin } from '../client/mixins'
+  import { jump } from '../client/anchor'
 
   export default {
     name: 'System',

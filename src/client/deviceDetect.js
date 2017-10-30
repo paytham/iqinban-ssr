@@ -1,5 +1,5 @@
 export function isPc () {
-  let userAgentInfo = navigator.userAgent
+  let userAgentInfo = window.navigator.userAgent
   let Agents = ['Android', 'iPhone', 'ymbianOS', 'Windows Phone', 'iPad', 'iPod']
   let flag = true
   for (let v = 0; v < Agents.length; v++) {
@@ -12,7 +12,7 @@ export function isPc () {
 }
 
 export function mobileType () {
-  let u = navigator.userAgent
+  let u = window.navigator.userAgent
   if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {
     return 'Android'
   } else if (u.indexOf('iPhone') > -1) {

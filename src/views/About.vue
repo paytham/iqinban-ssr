@@ -91,7 +91,7 @@
   import IRow from '../components/Row.vue'
   import ICol from '../components/Col.vue'
   import { Map, drawMap } from '../client/map'
-  import { wowMixin } from '../client/wow'
+  import { wowMixin } from '../client/mixins'
 
   export default {
     name: 'About',

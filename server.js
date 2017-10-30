@@ -110,8 +110,10 @@ function render (req, res) {
 
   const context = {
     title: '琴伴—你聪明的练琴伙伴', // default title
-    url: req.url
+    url: req.url,
+    cookies: req.cookies
   }
+  //
   renderer.renderToString(context, (err, html) => {
     if (err) {
       if (!isProd) {

@@ -54,7 +54,7 @@
 <script>
   import IRow from '../components/Row.vue'
   import ICol from '../components/Col.vue'
-  import { wowMixin } from '../client/wow'
+  import { wowMixin } from '../client/mixins'
 
   export default {
     name: 'Help',

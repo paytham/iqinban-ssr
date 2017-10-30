@@ -12,10 +12,10 @@
 <script>
   import IHeader from './components/Header.vue'
   import IFooter from './components/Footer.vue'
-  import { headroomMixin } from './client/headroom'
-  import { scrollMixin } from './client/wow'
-  import { jump } from './client/scroll'
+  import { scrollMixin, headroomMixin } from './client/mixins'
+  import { jump } from './client/anchor'
   import { isIPad } from './client/deviceDetect'
+  import { mapActions } from 'vuex'
 
   export default {
     name: 'App',
@@ -25,15 +25,21 @@
     },
     mixins: [headroomMixin, scrollMixin],
     methods: {
-      scrollTop () {
-        jump(0)
+      ...mapActions([
+        'setLang'
+      ]),
+      scrollTop () { jump(0) },
+      // 国际化
+      async setLanguage () {
+        let storage = window.localStorage
+        let lang = storage.getItem('lang') || 'zh_CN'
+        await this.setLang(lang)
       }
     },
     mounted () {
       this.$nextTick(_ => {
-        if (isIPad() > 0) {
-          this.cls = 'is-ipad'
-        }
+        this.cls = isIPad() > 0 ? 'is-ipad' : ''
+        this.setLanguage()
       })
     },
     data () {
@@ -48,6 +54,7 @@
   @import "./assets/normolize";
   @import "./assets/base";
   @import "./assets/styles";
+  @import "./assets/select";
   /*.fade-enter-active, .fade-leave-active {
     transition: all .2s ease;
   }

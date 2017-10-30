@@ -1,40 +1,63 @@
-// thanks for wisewrong(http://www.cnblogs.com/wisewrong/p/6495726.html)
-export function jump (index) {
-  // 用 class="i-jump" 添加锚点
-  let jump = document.querySelectorAll('.i-jump')
-  let total = jump[index].offsetTop
-  let distance = document.documentElement.scrollTop || document.body.scrollTop
-  // 平滑滚动，时长500ms，每10ms一跳，共50跳
-  let step = total / 50
-  if (total > distance) {
-    smoothDown()
-  } else {
-    let newTotal = distance - total
-    step = newTotal / 50
-    smoothUp()
-  }
+// <!-- saved from url=(0035)https://bumfo.github.io/dialog.html -->
+export function scroll (domElem) {
+  let touchX
+  let touchY
 
-  function smoothDown () {
-    if (distance < total) {
-      distance += step
-      document.body.scrollTop = distance
-      document.documentElement.scrollTop = distance
-      setTimeout(smoothDown, 10)
-    } else {
-      document.body.scrollTop = total
-      document.documentElement.scrollTop = total
+  // touchstart
+  window.ontouchstart = function (e) {
+    if (!document.body.classList.contains('hidden')) {
+      return
+    }
+
+    let touch = e.changedTouches[0]
+    touchX = touch.screenX
+    touchY = touch.screenY
+
+    if (!domElem.contains(e.target)) {
+      e.preventDefault()
+    }
+
+    if (domElem.scrollTop === 0) {
+      e.preventDefault()
+    } else if (domElem.scrollTop === domElem.scrollHeight - domElem.clientHeight) {
+      e.preventDefault()
     }
   }
 
-  function smoothUp () {
-    if (distance > total) {
-      distance -= step
-      document.body.scrollTop = distance
-      document.documentElement.scrollTop = distance
-      setTimeout(smoothUp, 10)
-    } else {
-      document.body.scrollTop = total
-      document.documentElement.scrollTop = total
+  // touchend
+  window.ontouchend = function (e) {
+    let touch = e.changedTouches[0]
+
+    if (Math.abs(touch.screenY - touchY) > 10 || Math.abs(touch.screenX - touchX) > 10) {
+      return
     }
+
+    if (!domElem.contains(e.target)) {
+      document.body.classList.remove('hidden')
+    }
+
+    touchX = void 0
+    touchY = void 0
   }
+
+  window.ontouchcancel = function (e) {
+    touchX = void 0
+    touchY = void 0
+  }
+
+  let padding = 1
+
+  requestAnimationFrame(function frame () {
+    let min = 0
+    let max = domElem.scrollHeight - domElem.clientHeight
+    let val = domElem.scrollTop
+
+    if (val === min) {
+      domElem.scrollTop += padding
+    } else if (val === max) {
+      domElem.scrollTop -= padding
+    }
+
+    requestAnimationFrame(frame)
+  })
 }

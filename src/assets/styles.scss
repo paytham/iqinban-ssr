@@ -14,10 +14,11 @@
  *  8. about 关于我们
  *  9. help 帮助与支持
  * 10. corp 商务合作
- * 11. privacy 隐私条款
+ * 11. privacy&agreement 隐私条款
  *
  */
 
+//region animate
 /*----- start animate -----*/
 .animated {
   animation-duration: 1s;
@@ -104,7 +105,9 @@
   animation-name: fadeIn;
 }
 /*----- end animate -----*/
+//endregion
 
+//region global
 /*----- start global -----*/
 h1 {
   font-size: pxToVw(48px);
@@ -191,7 +194,9 @@ a.b, button.b {
   }
 }
 /*----- end global -----*/
+//endregion
 
+//region header
 /*----- start header -----*/
 $nav-color: #fff;
 $nav-opaque-color: #071423;
@@ -485,7 +490,9 @@ $header-opaque-background: #fff;
   }
 }
 /*----- end header -----*/
+//endregion
 
+//region footer
 /*----- start footer -----*/
 $footer-background: #444f4d;
 $footer-title-color: #fff;
@@ -604,14 +611,16 @@ $footer-border-color: #fff;
   }
 }
 /*----- end footer -----*/
+//endregion
 
+//region section
 /*----- start section -----*/
 .i-section {
   position: relative;
   background-repeat: no-repeat;
   background-position: center top;
   @media (min-width: 1000px) {
-    background-attachment: fixed;
+    //background-attachment: fixed;
   }
   @media (max-width: 999px) {
     height: auto;
@@ -658,7 +667,9 @@ $footer-border-color: #fff;
   }
 }
 /*----- end section -----*/
+//endregion
 
+//region background-image
 /*----- start background-image -----*/
 .i-home {
   &__section3 {
@@ -690,7 +701,9 @@ $footer-border-color: #fff;
   }
 }
 /*----- end background-image -----*/
+//endregion
 
+//region home
 /*----- start home -----*/
 $home-section1-h1-color: #fff;
 $home-section1-h1-mobile-color: #0b1f35;
@@ -1090,7 +1103,9 @@ $home-section4-em-color: #45505b;
   }
 }
 /*----- end home -----*/
+//endregion
 
+//region sparring
 /*----- start sparring -----*/
 $sparring-section1-a-color: #fff;
 $sparring-section1-a-background: #2f83e3;
@@ -1401,7 +1416,9 @@ $sparring-section4-h2-color: #ff4f00;
   }
 }
 /*----- end sparring -----*/
+//endregion
 
+//region system
 /*----- start system -----*/
 $system-section1-a-color: #fff;
 $system-section1-a-background: #19d7a7;
@@ -1884,7 +1901,9 @@ $system-section2-a-border: transparent;
   }
 }
 /*----- end system -----*/
+//endregion system
 
+//region about
 /*----- start about -----*/
 .i-about {
   @media (max-width: 999px) {
@@ -2211,7 +2230,9 @@ $system-section2-a-border: transparent;
   }
 }
 /*----- end about -----*/
+//endregion
 
+//region help
 /*----- start help -----*/
 $help-section3-background: #e4e8ee;
 
@@ -2367,7 +2388,9 @@ $help-section3-background: #e4e8ee;
   }
 }
 /*----- end help -----*/
+//endregion help
 
+//region corp
 /*----- start corp -----*/
 $corp__section1-background: #f6f7f9;
 $corp__section1-form-background: #fff;
@@ -2428,6 +2451,7 @@ $corp__section1-form-border-radius: 12px;
         }
       }
       &__item {
+        position: relative;
         @media (min-width: 1000px) {
           margin-left: pxToVw(150px);
           margin-bottom: pxToVw(30px);
@@ -2436,11 +2460,42 @@ $corp__section1-form-border-radius: 12px;
           margin-left: pxToVwMobile(34px);
           margin-bottom: pxToVwMobile(25px);
         }
+        transition: all 350ms ease;
+        &.is-error {
+          .i-form__input, .i-form__textarea {
+            &:after {
+              @media (min-width: 1000px) {
+                @include i-1px(#ff231c, 'all', '8px');
+                border-radius: pxToVw(8px);
+              }
+              @media (max-width: 999px) {
+                @include i-1px(#ff231c, 'all', '8px');
+                border-radius: pxToVwMobile(8px);
+              }
+            }
+          }
+        }
+      }
+      &__message {
+        position: absolute;
+        color: #ff231c;
+        @media (min-width: 1000px) {
+          font-size: pxToVw(12px);
+          bottom: pxToVw(-18px);
+          left: pxToVw(5px);
+        }
+        @media (max-width: 999px) {
+          font-size: pxToVwMobile(12px);
+          bottom: pxToVwMobile(-18px);
+          left: pxToVwMobile(5px);
+        }
       }
       &__input {
         display: block;
         position: relative;
         background-color: #fff;
+        transition: all 0.3s ease;
+        color: #333;
         &:hover, &:focus {
           @media (min-width: 1000px) {
             box-shadow: 0 1px 10px 0 #e8e9ea;
@@ -2452,10 +2507,12 @@ $corp__section1-form-border-radius: 12px;
         @media (min-width: 1000px) {
           width: pxToVw(350px);
           height: pxToVw(40px);
+          font-size: pxToVw(16px);
         }
         @media (max-width: 999px) {
           width: pxToVwMobile(270px);
           height: pxToVwMobile(36px);
+          font-size: pxToVwMobile(16px);
         }
         &:after {
           @media (min-width: 1000px) {
@@ -2491,6 +2548,9 @@ $corp__section1-form-border-radius: 12px;
         border: none;
         background-size: contain;
         background-repeat: no-repeat;
+        cursor: pointer;
+        outline: none;
+        -webkit-appearance: none;
         @media (min-width: 1000px) {
           height: pxToVw(59px);
           width: pxToVw(250px);
@@ -2526,8 +2586,10 @@ $corp__section1-form-border-radius: 12px;
   }
 }
 /*----- end corp -----*/
+//endregion
 
-/*----- start privacy -----*/
+//region privacy&agreement
+/*----- start privacy&agreement -----*/
 .i-privacy, .i-agreement {
   background: #fafafa;
   &__section1 {
@@ -2624,4 +2686,5 @@ $corp__section1-form-border-radius: 12px;
     }
   }
 }
-/*----- end privacy -----*/
+/*----- end privacy&agreement -----*/
+//endregion
